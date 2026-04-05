@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Serif+SC:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+
+      <button id="prevButton" class="edge-arrow edge-arrow-left" type="button" aria-label="上一个单词">
+        &#8249;
+      </button>
+
+      <main class="stage" id="wordCard">
+        <section class="word-stage">
+          <p class="phonetic" id="phoneticText">/kəmˈpjuː.t̬ɚ/</p>
+          <h1 class="word-mark" id="wordText" aria-live="polite"></h1>
+          <p class="meaning" id="meaningText">计算机</p>
+        </section>
+
+        <div class="bubble-lane" id="bubbleLane" aria-hidden="true"></div>
+
+        <form class="memory-dock" id="memoryForm">
+          <label class="memory-shell" for="memoryInput">
+            <input
+              id="memoryInput"
+              class="memory-input"
+              type="text"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              placeholder="拼写单词"
+            />
+            <button class="memory-send" type="submit" aria-label="发送默写单词">
+              <span class="memory-send-icon">&#8593;</span>
+            </button>
+          </label>
+        </form>
+      </main>
+
+      <button id="nextButton" class="edge-arrow edge-arrow-right" type="button" aria-label="下一个单词">
+        &#8250;
+      </button>
+    </div>
+
+    <script src="./vocabulary.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
