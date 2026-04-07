@@ -127,6 +127,12 @@ input {
   font-variant-ligatures: none;
   font-feature-settings: "liga" 0, "kern" 1;
   text-rendering: geometricPrecision;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  outline: none;
 }
 
 .word-chunk {
@@ -199,6 +205,8 @@ input {
   pointer-events: none;
   user-select: none;
   text-rendering: geometricPrecision;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .memory-bubble-word {
@@ -311,6 +319,42 @@ input {
   font-size: 3rem;
   line-height: 1;
   backdrop-filter: blur(18px);
+}
+
+.word-mark:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+.platform-windows .ambient {
+  filter: blur(7px);
+  opacity: 0.6;
+}
+
+.platform-windows .word-stage,
+.platform-windows .stage {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.platform-windows .stage {
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.9) 0%, rgba(248, 241, 233, 0.84) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.platform-windows .memory-shell,
+.platform-windows .edge-arrow {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 243, 238, 0.88) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.performance-lite .memory-bubble {
+  filter: none;
 }
 
 .edge-arrow-left {

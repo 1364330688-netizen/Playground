@@ -25,6 +25,29 @@ const elements = {
   nextButton: document.getElementById("nextButton"),
 };
 
+function detectEnvironment() {
+  const userAgent = navigator.userAgent || "";
+  const platform = navigator.userAgentData?.platform || navigator.platform || "";
+  const touchPoints = navigator.maxTouchPoints || 0;
+  const isWindows = /win/i.test(platform) || /\bwindows\b/i.test(userAgent);
+  const isAndroid = /\bandroid\b/i.test(userAgent);
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent) || (platform === "MacIntel" && touchPoints > 1);
+  const isMac = /mac/i.test(platform) || /\bmac os x\b/i.test(userAgent);
+
+  return {
+    isWindows,
+    isAndroid,
+    isIOS,
+    isMac,
+    shouldUseLiteEffects: isWindows,
+  };
+}
+
+const environment = detectEnvironment();
+document.documentElement.classList.toggle("platform-windows", environment.isWindows);
+document.documentElement.classList.toggle("platform-android", environment.isAndroid);
+document.documentElement.classList.toggle("performance-lite", environment.shouldUseLiteEffects);
+
 function buildShuffledOrder(excludeIndex = null) {
   const order = vocabulary.map((_, index) => index);
 
@@ -48,6 +71,9 @@ const state = {
 
 let availableVoices = [];
 let autoPronounceTimer = null;
+let hasUserActivatedAudio = false;
+let pendingAutoPronunciation = false;
+let lastWordActivationAt = 0;
 
 function getCurrentWord() {
   const currentIndex = state.order[state.currentPosition] ?? 0;
@@ -225,6 +251,50 @@ function animateBubbleLetters(letters, duration) {
   });
 }
 
+function animateBubbleLettersLite(letters, duration) {
+  const centerIndex = (letters.length - 1) / 2;
+
+  letters.forEach((letter, index) => {
+    if (letter.dataset.space === "true" || typeof letter.animate !== "function") {
+      return;
+    }
+
+    const distanceFromCenter = index - centerIndex;
+    const xDrift = distanceFromCenter * randomBetween(4, 8);
+    const rise = randomBetween(-18, -10) - Math.abs(distanceFromCenter) * 1.4;
+    const delay = Math.max(0, Math.abs(distanceFromCenter) * 18 + randomBetween(0, 70));
+
+    letter.animate(
+      [
+        {
+          opacity: 0,
+          transform: "translate3d(0px, 0px, 0) scale(0.96)",
+        },
+        {
+          offset: 0.28,
+          opacity: 1,
+          transform: `translate3d(${Math.round(xDrift * 0.4)}px, ${Math.round(rise * 0.28)}px, 0) scale(1.01)`,
+        },
+        {
+          offset: 0.72,
+          opacity: 0.72,
+          transform: `translate3d(${Math.round(xDrift)}px, ${Math.round(rise)}px, 0) scale(1.01)`,
+        },
+        {
+          opacity: 0,
+          transform: `translate3d(${Math.round(xDrift * 1.16)}px, ${Math.round(rise * 1.18)}px, 0) scale(1)`,
+        },
+      ],
+      {
+        duration: Math.max(1200, duration * 0.62),
+        delay,
+        easing: "cubic-bezier(0.22, 0.72, 0.2, 1)",
+        fill: "both",
+      }
+    );
+  });
+}
+
 function createMemoryBubble(value, isCorrect) {
   const bubble = document.createElement("div");
   const laneWidth = elements.bubbleLane.clientWidth || elements.wordCard.clientWidth || 600;
@@ -238,7 +308,9 @@ function createMemoryBubble(value, isCorrect) {
   const midTilt = startTilt + randomBetween(-2.4, 2.4);
   const endTilt = midTilt + randomBetween(-2.8, 2.8);
   const returnTilt = endTilt + randomBetween(-1.8, 1.8);
-  const duration = randomBetween(3480, 4580);
+  const duration = environment.shouldUseLiteEffects
+    ? randomBetween(2860, 3720)
+    : randomBetween(3480, 4580);
 
   bubble.className = `memory-bubble ${isCorrect ? "memory-bubble-success" : "memory-bubble-error"}`;
   wordShell.className = "memory-bubble-word";
@@ -279,44 +351,74 @@ function createMemoryBubble(value, isCorrect) {
   bubble.style.left = `${startLeft}px`;
   bubble.style.bottom = `${startBottom}px`;
 
-  const keyframes = [
-    {
-      opacity: 0,
-      filter: "blur(0.7px)",
-      transform: `translate3d(0px, 0px, 0) scale(0.92) rotate(${startTilt}deg)`,
-    },
-    {
-      offset: 0.16,
-      opacity: 1,
-      filter: "blur(0px)",
-      transform: `translate3d(${Math.round(curveOneX)}px, -16px, 0) scale(1.01) rotate(${Math.round(startTilt * 0.35)}deg)`,
-    },
-    {
-      offset: 0.46,
-      opacity: 0.98,
-      filter: "blur(0px)",
-      transform: `translate3d(${Math.round(curveTwoX)}px, ${Math.round(rise * 0.42)}px, 0) scale(1.03) rotate(${midTilt}deg)`,
-    },
-    {
-      offset: 0.72,
-      opacity: 0.72,
-      filter: "blur(0.12px)",
-      transform: `translate3d(${Math.round(endX)}px, ${Math.round(rise * 0.76)}px, 0) scale(1.04) rotate(${endTilt}deg)`,
-    },
-    {
-      offset: 0.88,
-      opacity: 0.52,
-      filter: "blur(0.2px)",
-      transform: `translate3d(${Math.round(returnX)}px, ${Math.round(rise * 0.88)}px, 0) scale(1.025) rotate(${returnTilt}deg)`,
-    },
-    {
-      opacity: 0,
-      filter: "blur(0.95px)",
-      transform: `translate3d(${Math.round(finalX)}px, ${Math.round(rise)}px, 0) scale(1.05) rotate(${Math.round(endTilt + randomBetween(-2, 2))}deg)`,
-    },
-  ];
+  const keyframes = environment.shouldUseLiteEffects
+    ? [
+        {
+          opacity: 0,
+          transform: `translate3d(0px, 0px, 0) scale(0.94) rotate(${startTilt}deg)`,
+        },
+        {
+          offset: 0.18,
+          opacity: 1,
+          transform: `translate3d(${Math.round(curveOneX)}px, -14px, 0) scale(1.01) rotate(${Math.round(startTilt * 0.45)}deg)`,
+        },
+        {
+          offset: 0.5,
+          opacity: 0.94,
+          transform: `translate3d(${Math.round(curveTwoX)}px, ${Math.round(rise * 0.44)}px, 0) scale(1.03) rotate(${midTilt}deg)`,
+        },
+        {
+          offset: 0.82,
+          opacity: 0.48,
+          transform: `translate3d(${Math.round(returnX)}px, ${Math.round(rise * 0.86)}px, 0) scale(1.03) rotate(${returnTilt}deg)`,
+        },
+        {
+          opacity: 0,
+          transform: `translate3d(${Math.round(finalX)}px, ${Math.round(rise)}px, 0) scale(1.04) rotate(${Math.round(endTilt + randomBetween(-2, 2))}deg)`,
+        },
+      ]
+    : [
+        {
+          opacity: 0,
+          filter: "blur(0.7px)",
+          transform: `translate3d(0px, 0px, 0) scale(0.92) rotate(${startTilt}deg)`,
+        },
+        {
+          offset: 0.16,
+          opacity: 1,
+          filter: "blur(0px)",
+          transform: `translate3d(${Math.round(curveOneX)}px, -16px, 0) scale(1.01) rotate(${Math.round(startTilt * 0.35)}deg)`,
+        },
+        {
+          offset: 0.46,
+          opacity: 0.98,
+          filter: "blur(0px)",
+          transform: `translate3d(${Math.round(curveTwoX)}px, ${Math.round(rise * 0.42)}px, 0) scale(1.03) rotate(${midTilt}deg)`,
+        },
+        {
+          offset: 0.72,
+          opacity: 0.72,
+          filter: "blur(0.12px)",
+          transform: `translate3d(${Math.round(endX)}px, ${Math.round(rise * 0.76)}px, 0) scale(1.04) rotate(${endTilt}deg)`,
+        },
+        {
+          offset: 0.88,
+          opacity: 0.52,
+          filter: "blur(0.2px)",
+          transform: `translate3d(${Math.round(returnX)}px, ${Math.round(rise * 0.88)}px, 0) scale(1.025) rotate(${returnTilt}deg)`,
+        },
+        {
+          opacity: 0,
+          filter: "blur(0.95px)",
+          transform: `translate3d(${Math.round(finalX)}px, ${Math.round(rise)}px, 0) scale(1.05) rotate(${Math.round(endTilt + randomBetween(-2, 2))}deg)`,
+        },
+      ];
 
-  animateBubbleLetters(letters, duration);
+  if (environment.shouldUseLiteEffects) {
+    animateBubbleLettersLite(letters, duration);
+  } else {
+    animateBubbleLetters(letters, duration);
+  }
 
   if (typeof bubble.animate === "function") {
     const animation = bubble.animate(keyframes, {
@@ -368,11 +470,19 @@ function pickVoice() {
   );
 }
 
-function pronounceCurrentWord() {
+function pronounceCurrentWord(options = {}) {
   if (!("speechSynthesis" in window)) {
-    return;
+    return false;
   }
 
+  const { force = false } = options;
+  const canSpeakNow = force || hasUserActivatedAudio || navigator.userActivation?.hasBeenActive;
+  if (!canSpeakNow) {
+    pendingAutoPronunciation = true;
+    return false;
+  }
+
+  window.clearTimeout(autoPronounceTimer);
   const currentWord = getCurrentWord();
   const utterance = new SpeechSynthesisUtterance(currentWord.word);
   const voice = pickVoice();
@@ -383,20 +493,74 @@ function pronounceCurrentWord() {
   utterance.pitch = 0.98;
 
   window.speechSynthesis.cancel();
+  window.speechSynthesis.resume();
   window.speechSynthesis.speak(utterance);
+  pendingAutoPronunciation = false;
+  return true;
 }
 
-function scheduleAutoPronunciation() {
+function scheduleAutoPronunciation(delay = 120) {
   window.clearTimeout(autoPronounceTimer);
   autoPronounceTimer = window.setTimeout(() => {
     pronounceCurrentWord();
-  }, 120);
+  }, delay);
+}
+
+function unlockAudioAndReplayPending() {
+  if (hasUserActivatedAudio) {
+    return;
+  }
+
+  hasUserActivatedAudio = true;
+  window.speechSynthesis?.resume?.();
+
+  if (pendingAutoPronunciation) {
+    pendingAutoPronunciation = false;
+    scheduleAutoPronunciation(120);
+  }
+}
+
+function activateWordPronunciation(event) {
+  if (event.type === "keydown" && event.key !== "Enter" && event.key !== " ") {
+    return;
+  }
+
+  if (event.cancelable) {
+    event.preventDefault();
+  }
+  event.stopPropagation();
+
+  const now = Date.now();
+  if (event.type === "click" && now - lastWordActivationAt < 320) {
+    return;
+  }
+
+  lastWordActivationAt = now;
+  unlockAudioAndReplayPending();
+  pronounceCurrentWord({ force: true });
 }
 
 elements.memoryForm.addEventListener("submit", submitMemory);
 elements.prevButton.addEventListener("click", () => nextWord(-1));
 elements.nextButton.addEventListener("click", () => nextWord(1));
-elements.wordText.addEventListener("click", pronounceCurrentWord);
+elements.wordText.addEventListener("pointerdown", (event) => {
+  if (event.pointerType !== "mouse" && event.cancelable) {
+    event.preventDefault();
+  }
+});
+elements.wordText.addEventListener("pointerup", activateWordPronunciation);
+elements.wordText.addEventListener("click", activateWordPronunciation);
+elements.wordText.addEventListener("keydown", activateWordPronunciation);
+
+document.addEventListener("pointerdown", unlockAudioAndReplayPending, {
+  capture: true,
+  once: true,
+  passive: true,
+});
+document.addEventListener("keydown", unlockAudioAndReplayPending, {
+  capture: true,
+  once: true,
+});
 
 window.addEventListener("keydown", (event) => {
   if (document.activeElement === elements.memoryInput) {
@@ -413,7 +577,7 @@ window.addEventListener("keydown", (event) => {
 
   if (event.key === " " || event.key === "Enter") {
     event.preventDefault();
-    pronounceCurrentWord();
+    pronounceCurrentWord({ force: true });
   }
 });
 
