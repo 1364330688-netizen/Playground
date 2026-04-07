@@ -338,7 +338,8 @@ window.VOCABULARY = [
   {
     "word": "about",
     "chunks": [
-      "about"
+      "a",
+      "bout"
     ],
     "phonetic": "/əˈbaʊt/",
     "meaning": "关于"
@@ -483,7 +484,8 @@ window.VOCABULARY = [
   {
     "word": "into",
     "chunks": [
-      "into"
+      "in",
+      "to"
     ],
     "phonetic": "/ˈɪntu/",
     "meaning": "进入"
@@ -563,7 +565,8 @@ window.VOCABULARY = [
   {
     "word": "other",
     "chunks": [
-      "other"
+      "oth",
+      "er"
     ],
     "phonetic": "/ˈəðər/",
     "meaning": "其他的"
@@ -659,7 +662,8 @@ window.VOCABULARY = [
   {
     "word": "also",
     "chunks": [
-      "also"
+      "al",
+      "so"
     ],
     "phonetic": "/ˈɔlsoʊ/",
     "meaning": "也"
@@ -748,7 +752,8 @@ window.VOCABULARY = [
   {
     "word": "many",
     "chunks": [
-      "many"
+      "ma",
+      "ny"
     ],
     "phonetic": "/ˈmɛni/",
     "meaning": "多数"
@@ -764,7 +769,8 @@ window.VOCABULARY = [
   {
     "word": "only",
     "chunks": [
-      "only"
+      "on",
+      "ly"
     ],
     "phonetic": "/ˈoʊnli/",
     "meaning": "唯一的"
@@ -788,7 +794,8 @@ window.VOCABULARY = [
   {
     "word": "very",
     "chunks": [
-      "very"
+      "ve",
+      "ry"
     ],
     "phonetic": "/ˈvɛri/",
     "meaning": "真正的"
@@ -796,7 +803,8 @@ window.VOCABULARY = [
   {
     "word": "even",
     "chunks": [
-      "even"
+      "e",
+      "ven"
     ],
     "phonetic": "/ˈivɪn/",
     "meaning": "平坦的"
@@ -828,7 +836,8 @@ window.VOCABULARY = [
   {
     "word": "woman",
     "chunks": [
-      "woman"
+      "wom",
+      "an"
     ],
     "phonetic": "/ˈwʊmən/",
     "meaning": "女人"
@@ -892,7 +901,8 @@ window.VOCABULARY = [
   {
     "word": "after",
     "chunks": [
-      "after"
+      "af",
+      "ter"
     ],
     "phonetic": "/ˈæftər/",
     "meaning": "在...之后"
@@ -924,7 +934,8 @@ window.VOCABULARY = [
   {
     "word": "over",
     "chunks": [
-      "over"
+      "o",
+      "ver"
     ],
     "phonetic": "/ˈoʊvər/",
     "meaning": "在……上方"
@@ -1012,7 +1023,8 @@ window.VOCABULARY = [
   {
     "word": "never",
     "chunks": [
-      "never"
+      "nev",
+      "er"
     ],
     "phonetic": "/ˈnɛvər/",
     "meaning": "从不"
@@ -1091,8 +1103,8 @@ window.VOCABULARY = [
   {
     "word": "family",
     "chunks": [
-      "fa",
-      "mi",
+      "fam",
+      "i",
       "ly"
     ],
     "phonetic": "/ˈfæməli/",
@@ -1214,7 +1226,8 @@ window.VOCABULARY = [
   {
     "word": "begin",
     "chunks": [
-      "begin"
+      "be",
+      "gin"
     ],
     "phonetic": "/bɪˈgɪn/",
     "meaning": "开始"
@@ -1280,7 +1293,8 @@ window.VOCABULARY = [
   {
     "word": "every",
     "chunks": [
-      "every"
+      "ev",
+      "ery"
     ],
     "phonetic": "/ˈɛvəri/",
     "meaning": "每一"
@@ -1312,7 +1326,8 @@ window.VOCABULARY = [
   {
     "word": "american",
     "chunks": [
-      "ameri",
+      "amer",
+      "i",
       "can"
     ],
     "phonetic": "/əˈmɛrɪkən/",
@@ -1337,7 +1352,8 @@ window.VOCABULARY = [
   {
     "word": "against",
     "chunks": [
-      "against"
+      "a",
+      "gainst"
     ],
     "phonetic": "/əˈgɛnst/",
     "meaning": "反对"
@@ -1361,7 +1377,8 @@ window.VOCABULARY = [
   {
     "word": "again",
     "chunks": [
-      "again"
+      "a",
+      "gain"
     ],
     "phonetic": "/əˈgɛn/",
     "meaning": "再一次"
@@ -1580,7 +1597,8 @@ window.VOCABULARY = [
   {
     "word": "today",
     "chunks": [
-      "today"
+      "to",
+      "day"
     ],
     "phonetic": "/təˈdeɪ/",
     "meaning": "今天"
@@ -1664,7 +1682,8 @@ window.VOCABULARY = [
   {
     "word": "under",
     "chunks": [
-      "under"
+      "un",
+      "der"
     ],
     "phonetic": "/ˈəndər/",
     "meaning": "在……下面"
@@ -1672,7 +1691,8 @@ window.VOCABULARY = [
   {
     "word": "water",
     "chunks": [
-      "water"
+      "wa",
+      "ter"
     ],
     "phonetic": "/ˈwɔtər/",
     "meaning": "水"
@@ -1696,7 +1716,8 @@ window.VOCABULARY = [
   {
     "word": "mother",
     "chunks": [
-      "mother"
+      "moth",
+      "er"
     ],
     "phonetic": "/ˈməðər/",
     "meaning": "母亲"
@@ -1704,7 +1725,8 @@ window.VOCABULARY = [
   {
     "word": "area",
     "chunks": [
-      "area"
+      "a",
+      "rea"
     ],
     "phonetic": "/ˈɛriə/",
     "meaning": "区域"
@@ -1722,7 +1744,8 @@ window.VOCABULARY = [
   {
     "word": "money",
     "chunks": [
-      "money"
+      "mon",
+      "ey"
     ],
     "phonetic": "/ˈməni/",
     "meaning": "金钱"
@@ -1730,7 +1753,8 @@ window.VOCABULARY = [
   {
     "word": "story",
     "chunks": [
-      "story"
+      "sto",
+      "ry"
     ],
     "phonetic": "/ˈstɔri/",
     "meaning": "故事"
@@ -1780,7 +1804,8 @@ window.VOCABULARY = [
   {
     "word": "study",
     "chunks": [
-      "study"
+      "stu",
+      "dy"
     ],
     "phonetic": "/ˈstədi/",
     "meaning": "学习"
@@ -1845,7 +1870,8 @@ window.VOCABULARY = [
   {
     "word": "issue",
     "chunks": [
-      "issue"
+      "is",
+      "sue"
     ],
     "phonetic": "/ˈɪʃu/",
     "meaning": "发行"
@@ -1960,7 +1986,8 @@ window.VOCABULARY = [
   {
     "word": "around",
     "chunks": [
-      "around"
+      "a",
+      "round"
     ],
     "phonetic": "/əraʊnd/",
     "meaning": "包围"
@@ -2003,7 +2030,8 @@ window.VOCABULARY = [
   {
     "word": "away",
     "chunks": [
-      "away"
+      "a",
+      "way"
     ],
     "phonetic": "/əˈweɪ/",
     "meaning": "离去"
@@ -2011,7 +2039,8 @@ window.VOCABULARY = [
   {
     "word": "until",
     "chunks": [
-      "until"
+      "un",
+      "til"
     ],
     "phonetic": "/ənˈtɪl/",
     "meaning": "直到"
@@ -2019,7 +2048,8 @@ window.VOCABULARY = [
   {
     "word": "power",
     "chunks": [
-      "power"
+      "pow",
+      "er"
     ],
     "phonetic": "/paʊər/",
     "meaning": "力"
@@ -2043,7 +2073,8 @@ window.VOCABULARY = [
   {
     "word": "often",
     "chunks": [
-      "often"
+      "of",
+      "ten"
     ],
     "phonetic": "/ˈɔfən/",
     "meaning": "时常"
@@ -2067,8 +2098,9 @@ window.VOCABULARY = [
   {
     "word": "political",
     "chunks": [
-      "poli",
-      "ti",
+      "po",
+      "lit",
+      "i",
       "cal"
     ],
     "phonetic": "/pəˈlɪtɪkəl/",
@@ -2085,7 +2117,8 @@ window.VOCABULARY = [
   {
     "word": "among",
     "chunks": [
-      "among"
+      "a",
+      "mong"
     ],
     "phonetic": "/əˈməŋ/",
     "meaning": "在...之中"
@@ -2093,7 +2126,8 @@ window.VOCABULARY = [
   {
     "word": "ever",
     "chunks": [
-      "ever"
+      "ev",
+      "er"
     ],
     "phonetic": "/ˈɛvər/",
     "meaning": "曾经"
@@ -2135,7 +2169,8 @@ window.VOCABULARY = [
   {
     "word": "member",
     "chunks": [
-      "member"
+      "mem",
+      "ber"
     ],
     "phonetic": "/ˈmɛmbər/",
     "meaning": "成员"
@@ -2175,7 +2210,8 @@ window.VOCABULARY = [
   {
     "word": "city",
     "chunks": [
-      "city"
+      "ci",
+      "ty"
     ],
     "phonetic": "/ˈsɪti/",
     "meaning": "城市"
@@ -2219,7 +2255,8 @@ window.VOCABULARY = [
   {
     "word": "later",
     "chunks": [
-      "later"
+      "lat",
+      "er"
     ],
     "phonetic": "/ˈleɪtər/",
     "meaning": "以后"
@@ -2227,7 +2264,8 @@ window.VOCABULARY = [
   {
     "word": "community",
     "chunks": [
-      "commu",
+      "com",
+      "mu",
       "ni",
       "ty"
     ],
@@ -2277,7 +2315,8 @@ window.VOCABULARY = [
   {
     "word": "president",
     "chunks": [
-      "presi",
+      "pres",
+      "i",
       "dent"
     ],
     "phonetic": "/ˈprɛzɪdənt/",
@@ -2318,7 +2357,8 @@ window.VOCABULARY = [
   {
     "word": "minute",
     "chunks": [
-      "minute"
+      "mi",
+      "nute"
     ],
     "phonetic": "/ˈmɪnət/",
     "meaning": "分"
@@ -2344,7 +2384,8 @@ window.VOCABULARY = [
   {
     "word": "idea",
     "chunks": [
-      "idea"
+      "i",
+      "dea"
     ],
     "phonetic": "/aɪˈdiə/",
     "meaning": "主意"
@@ -2360,7 +2401,8 @@ window.VOCABULARY = [
   {
     "word": "body",
     "chunks": [
-      "body"
+      "bo",
+      "dy"
     ],
     "phonetic": "/ˈbɑdi/",
     "meaning": "身体"
@@ -2368,7 +2410,8 @@ window.VOCABULARY = [
   {
     "word": "information",
     "chunks": [
-      "infor",
+      "in",
+      "for",
       "ma",
       "tion"
     ],
@@ -2422,7 +2465,8 @@ window.VOCABULARY = [
   {
     "word": "whether",
     "chunks": [
-      "whether"
+      "wheth",
+      "er"
     ],
     "phonetic": "/ˈwɛðər/",
     "meaning": "是否"
@@ -2457,7 +2501,8 @@ window.VOCABULARY = [
   {
     "word": "parent",
     "chunks": [
-      "parent"
+      "par",
+      "ent"
     ],
     "phonetic": "/ˈpɛrənt/",
     "meaning": "父母"
@@ -2542,7 +2587,8 @@ window.VOCABULARY = [
   {
     "word": "level",
     "chunks": [
-      "level"
+      "lev",
+      "el"
     ],
     "phonetic": "/ˈlɛvəl/",
     "meaning": "水平"
@@ -2550,7 +2596,8 @@ window.VOCABULARY = [
   {
     "word": "allow",
     "chunks": [
-      "allow"
+      "al",
+      "low"
     ],
     "phonetic": "/əˈlaʊ/",
     "meaning": "允许"
@@ -2642,7 +2689,8 @@ window.VOCABULARY = [
   {
     "word": "party",
     "chunks": [
-      "party"
+      "par",
+      "ty"
     ],
     "phonetic": "/ˈpɑrti/",
     "meaning": "宴会"
@@ -2676,7 +2724,8 @@ window.VOCABULARY = [
   {
     "word": "open",
     "chunks": [
-      "open"
+      "o",
+      "pen"
     ],
     "phonetic": "/ˈoʊpən/",
     "meaning": "公开"
@@ -2684,8 +2733,8 @@ window.VOCABULARY = [
   {
     "word": "morning",
     "chunks": [
-      "morn",
-      "ing"
+      "mor",
+      "ning"
     ],
     "phonetic": "/ˈmɔrnɪŋ/",
     "meaning": "早晨"
@@ -2751,7 +2800,8 @@ window.VOCABULARY = [
   {
     "word": "early",
     "chunks": [
-      "early"
+      "ear",
+      "ly"
     ],
     "phonetic": "/ˈərli/",
     "meaning": "早的"
@@ -2776,7 +2826,8 @@ window.VOCABULARY = [
   {
     "word": "moment",
     "chunks": [
-      "moment"
+      "mo",
+      "ment"
     ],
     "phonetic": "/ˈmoʊmənt/",
     "meaning": "片刻"
@@ -2809,7 +2860,8 @@ window.VOCABULARY = [
   {
     "word": "offer",
     "chunks": [
-      "offer"
+      "of",
+      "fer"
     ],
     "phonetic": "/ˈɔfər/",
     "meaning": "给予"
@@ -2817,7 +2869,8 @@ window.VOCABULARY = [
   {
     "word": "enough",
     "chunks": [
-      "enough"
+      "e",
+      "nough"
     ],
     "phonetic": "/ɪˈnəf/",
     "meaning": "充足"
@@ -2825,7 +2878,8 @@ window.VOCABULARY = [
   {
     "word": "education",
     "chunks": [
-      "edu",
+      "ed",
+      "u",
       "ca",
       "tion"
     ],
@@ -2835,7 +2889,8 @@ window.VOCABULARY = [
   {
     "word": "across",
     "chunks": [
-      "across"
+      "ac",
+      "ross"
     ],
     "phonetic": "/əˈkrɔs/",
     "meaning": "越过"
@@ -2887,7 +2942,8 @@ window.VOCABULARY = [
   {
     "word": "maybe",
     "chunks": [
-      "maybe"
+      "may",
+      "be"
     ],
     "phonetic": "/ˈmeɪbi/",
     "meaning": "也许"
@@ -2904,7 +2960,8 @@ window.VOCABULARY = [
   {
     "word": "able",
     "chunks": [
-      "able"
+      "ab",
+      "le"
     ],
     "phonetic": "/ˈeɪbəl/",
     "meaning": "能干的"
@@ -2921,7 +2978,8 @@ window.VOCABULARY = [
     "word": "policy",
     "chunks": [
       "pol",
-      "icy"
+      "i",
+      "cy"
     ],
     "phonetic": "/ˈpɑləsi/",
     "meaning": "政策"
@@ -2947,7 +3005,8 @@ window.VOCABULARY = [
   {
     "word": "process",
     "chunks": [
-      "process"
+      "pro",
+      "cess"
     ],
     "phonetic": "/ˈprɔˌsɛs/",
     "meaning": "程序"
@@ -2955,7 +3014,8 @@ window.VOCABULARY = [
   {
     "word": "music",
     "chunks": [
-      "music"
+      "mu",
+      "sic"
     ],
     "phonetic": "/mˈjuzɪk/",
     "meaning": "音乐"
@@ -2992,7 +3052,8 @@ window.VOCABULARY = [
   {
     "word": "actually",
     "chunks": [
-      "actu",
+      "ac",
+      "tu",
       "al",
       "ly"
     ],
@@ -3010,8 +3071,9 @@ window.VOCABULARY = [
   {
     "word": "probably",
     "chunks": [
-      "probab",
-      "ly"
+      "pro",
+      "ba",
+      "bly"
     ],
     "phonetic": "/ˈprɑbəˌbli/",
     "meaning": "大概"
@@ -3019,7 +3081,8 @@ window.VOCABULARY = [
   {
     "word": "human",
     "chunks": [
-      "human"
+      "hu",
+      "man"
     ],
     "phonetic": "/ˈjumən/",
     "meaning": "人"
@@ -3186,7 +3249,8 @@ window.VOCABULARY = [
   {
     "word": "experience",
     "chunks": [
-      "expe",
+      "ex",
+      "pe",
       "ri",
       "ence"
     ],
@@ -3213,7 +3277,8 @@ window.VOCABULARY = [
   {
     "word": "local",
     "chunks": [
-      "local"
+      "lo",
+      "cal"
     ],
     "phonetic": "/ˈloʊkəl/",
     "meaning": "地方性的"
@@ -3371,7 +3436,8 @@ window.VOCABULARY = [
   {
     "word": "major",
     "chunks": [
-      "major"
+      "ma",
+      "jor"
     ],
     "phonetic": "/ˈmeɪdʒər/",
     "meaning": "主修课"
@@ -3397,7 +3463,8 @@ window.VOCABULARY = [
   {
     "word": "along",
     "chunks": [
-      "along"
+      "a",
+      "long"
     ],
     "phonetic": "/əˈlɔŋ/",
     "meaning": "平行地"
@@ -3405,7 +3472,8 @@ window.VOCABULARY = [
   {
     "word": "development",
     "chunks": [
-      "devel",
+      "de",
+      "vel",
       "op",
       "ment"
     ],
@@ -3451,8 +3519,8 @@ window.VOCABULARY = [
     "word": "economic",
     "chunks": [
       "eco",
-      "no",
-      "mic"
+      "nom",
+      "ic"
     ],
     "phonetic": "/ˌɛkəˈnɑmɪk/",
     "meaning": "经济上的"
@@ -3613,8 +3681,10 @@ window.VOCABULARY = [
   {
     "word": "military",
     "chunks": [
-      "mili",
-      "tary"
+      "mil",
+      "i",
+      "tar",
+      "y"
     ],
     "phonetic": "/ˈmɪlɪˌtɛri/",
     "meaning": "军事的；军队"
@@ -3701,7 +3771,8 @@ window.VOCABULARY = [
   {
     "word": "relationship",
     "chunks": [
-      "rela",
+      "re",
+      "la",
       "tion",
       "ship"
     ],
@@ -3711,7 +3782,8 @@ window.VOCABULARY = [
   {
     "word": "carry",
     "chunks": [
-      "carry"
+      "car",
+      "ry"
     ],
     "phonetic": "/ˈkɛri/",
     "meaning": "进位"
@@ -3804,7 +3876,8 @@ window.VOCABULARY = [
   {
     "word": "value",
     "chunks": [
-      "value"
+      "val",
+      "ue"
     ],
     "phonetic": "/ˈvælju/",
     "meaning": "价值"
@@ -3812,8 +3885,10 @@ window.VOCABULARY = [
   {
     "word": "international",
     "chunks": [
-      "inter",
-      "nation",
+      "in",
+      "ter",
+      "na",
+      "tion",
       "al"
     ],
     "phonetic": "/ˌɪnərˈnæʃənɑl/",
@@ -3848,7 +3923,8 @@ window.VOCABULARY = [
   {
     "word": "model",
     "chunks": [
-      "model"
+      "mod",
+      "el"
     ],
     "phonetic": "/ˈmɑdəl/",
     "meaning": "模型"
@@ -3920,7 +3996,8 @@ window.VOCABULARY = [
   {
     "word": "agree",
     "chunks": [
-      "agree"
+      "ag",
+      "ree"
     ],
     "phonetic": "/əˈgri/",
     "meaning": "同意"
@@ -3928,7 +4005,8 @@ window.VOCABULARY = [
   {
     "word": "especially",
     "chunks": [
-      "espe",
+      "es",
+      "pe",
       "cial",
       "ly"
     ],
@@ -3938,7 +4016,8 @@ window.VOCABULARY = [
   {
     "word": "record",
     "chunks": [
-      "record"
+      "re",
+      "cord"
     ],
     "phonetic": "/ˈrɛkərd/",
     "meaning": "记录"
@@ -3962,7 +4041,8 @@ window.VOCABULARY = [
   {
     "word": "paper",
     "chunks": [
-      "paper"
+      "pa",
+      "per"
     ],
     "phonetic": "/ˈpeɪpər/",
     "meaning": "纸"
@@ -4012,7 +4092,8 @@ window.VOCABULARY = [
   {
     "word": "event",
     "chunks": [
-      "event"
+      "e",
+      "vent"
     ],
     "phonetic": "/ɪˈvɛnt/",
     "meaning": "事件"
@@ -4038,7 +4119,8 @@ window.VOCABULARY = [
   {
     "word": "matter",
     "chunks": [
-      "matter"
+      "mat",
+      "ter"
     ],
     "phonetic": "/ˈmætər/",
     "meaning": "事件"
@@ -4056,7 +4138,8 @@ window.VOCABULARY = [
   {
     "word": "center",
     "chunks": [
-      "center"
+      "cen",
+      "ter"
     ],
     "phonetic": "/ˈsɛnər/",
     "meaning": "中心"
@@ -4081,7 +4164,8 @@ window.VOCABULARY = [
   {
     "word": "project",
     "chunks": [
-      "project"
+      "pro",
+      "ject"
     ],
     "phonetic": "/ˈprɑdʒɛkt/",
     "meaning": "计划"
@@ -4107,7 +4191,8 @@ window.VOCABULARY = [
     "chunks": [
       "ac",
       "tiv",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/ækˈtɪvɪti/",
     "meaning": "活动"
@@ -4123,7 +4208,8 @@ window.VOCABULARY = [
   {
     "word": "table",
     "chunks": [
-      "table"
+      "ta",
+      "ble"
     ],
     "phonetic": "/ˈteɪbəl/",
     "meaning": "桌子"
@@ -4180,8 +4266,10 @@ window.VOCABULARY = [
   {
     "word": "situation",
     "chunks": [
-      "situ",
-      "ation"
+      "sit",
+      "u",
+      "a",
+      "tion"
     ],
     "phonetic": "/ˌsɪʧuˈeɪʃən/",
     "meaning": "情况"
@@ -4189,7 +4277,8 @@ window.VOCABULARY = [
   {
     "word": "easy",
     "chunks": [
-      "easy"
+      "ea",
+      "sy"
     ],
     "phonetic": "/ˈizi/",
     "meaning": "容易的"
@@ -4232,7 +4321,8 @@ window.VOCABULARY = [
   {
     "word": "image",
     "chunks": [
-      "image"
+      "im",
+      "age"
     ],
     "phonetic": "/ˈɪmɪdʒ/",
     "meaning": "影像"
@@ -4266,7 +4356,8 @@ window.VOCABULARY = [
   {
     "word": "data",
     "chunks": [
-      "data"
+      "da",
+      "ta"
     ],
     "phonetic": "/ˈdætə/",
     "meaning": "pl. 资料"
@@ -4274,7 +4365,8 @@ window.VOCABULARY = [
   {
     "word": "cover",
     "chunks": [
-      "cover"
+      "cov",
+      "er"
     ],
     "phonetic": "/ˈkəvər/",
     "meaning": "盖子"
@@ -4410,7 +4502,8 @@ window.VOCABULARY = [
   {
     "word": "movie",
     "chunks": [
-      "movie"
+      "mo",
+      "vie"
     ],
     "phonetic": "/ˈmuvi/",
     "meaning": "电影"
@@ -4445,8 +4538,8 @@ window.VOCABULARY = [
   {
     "word": "simply",
     "chunks": [
-      "simp",
-      "ly"
+      "sim",
+      "ply"
     ],
     "phonetic": "/ˈsɪmpli/",
     "meaning": "简单地"
@@ -4464,7 +4557,8 @@ window.VOCABULARY = [
     "chunks": [
       "tech",
       "nol",
-      "ogy"
+      "o",
+      "gy"
     ],
     "phonetic": "/tɛkˈnɑlədʒi/",
     "meaning": "技术"
@@ -4488,7 +4582,8 @@ window.VOCABULARY = [
   {
     "word": "baby",
     "chunks": [
-      "baby"
+      "ba",
+      "by"
     ],
     "phonetic": "/ˈbeɪbi/",
     "meaning": "婴儿"
@@ -4540,7 +4635,8 @@ window.VOCABULARY = [
   {
     "word": "republican",
     "chunks": [
-      "repub",
+      "re",
+      "pub",
       "li",
       "can"
     ],
@@ -4550,8 +4646,10 @@ window.VOCABULARY = [
   {
     "word": "organization",
     "chunks": [
-      "orga",
-      "niza",
+      "or",
+      "ga",
+      "ni",
+      "za",
       "tion"
     ],
     "phonetic": "/ˌɔrgənəˈzeɪʃən/",
@@ -4627,7 +4725,8 @@ window.VOCABULARY = [
   {
     "word": "evidence",
     "chunks": [
-      "evi",
+      "ev",
+      "i",
       "dence"
     ],
     "phonetic": "/ˈɛvədəns/",
@@ -4698,7 +4797,8 @@ window.VOCABULARY = [
   {
     "word": "brother",
     "chunks": [
-      "brother"
+      "broth",
+      "er"
     ],
     "phonetic": "/ˈbrəðər/",
     "meaning": "兄弟"
@@ -4736,7 +4836,8 @@ window.VOCABULARY = [
   {
     "word": "summer",
     "chunks": [
-      "summer"
+      "sum",
+      "mer"
     ],
     "phonetic": "/ˈsəmər/",
     "meaning": "夏季"
@@ -4753,8 +4854,10 @@ window.VOCABULARY = [
   {
     "word": "available",
     "chunks": [
-      "avail",
-      "able"
+      "a",
+      "vail",
+      "a",
+      "ble"
     ],
     "phonetic": "/əˈveɪləbəl/",
     "meaning": "可利用的"
@@ -4779,8 +4882,10 @@ window.VOCABULARY = [
   {
     "word": "opportunity",
     "chunks": [
-      "oppor",
-      "tuni",
+      "op",
+      "por",
+      "tu",
+      "ni",
       "ty"
     ],
     "phonetic": "/ˌɑpərˈtunəti/",
@@ -4858,8 +4963,10 @@ window.VOCABULARY = [
   {
     "word": "administration",
     "chunks": [
-      "admin",
-      "istra",
+      "ad",
+      "min",
+      "is",
+      "tra",
       "tion"
     ],
     "phonetic": "/ædˌmɪnɪˈstreɪʃən/",
@@ -4911,7 +5018,8 @@ window.VOCABULARY = [
   {
     "word": "material",
     "chunks": [
-      "mate",
+      "ma",
+      "te",
       "ri",
       "al"
     ],
@@ -4921,7 +5029,8 @@ window.VOCABULARY = [
   {
     "word": "population",
     "chunks": [
-      "popu",
+      "pop",
+      "u",
       "la",
       "tion"
     ],
@@ -4932,7 +5041,8 @@ window.VOCABULARY = [
     "word": "economy",
     "chunks": [
       "econ",
-      "omy"
+      "o",
+      "my"
     ],
     "phonetic": "/ɪˈkɑnəmi/",
     "meaning": "经济"
@@ -4940,7 +5050,8 @@ window.VOCABULARY = [
   {
     "word": "medical",
     "chunks": [
-      "medi",
+      "med",
+      "i",
       "cal"
     ],
     "phonetic": "/ˈmɛdɪkəl/",
@@ -5072,7 +5183,8 @@ window.VOCABULARY = [
   {
     "word": "security",
     "chunks": [
-      "secu",
+      "se",
+      "cu",
       "ri",
       "ty"
     ],
@@ -5260,7 +5372,8 @@ window.VOCABULARY = [
   {
     "word": "order",
     "chunks": [
-      "order"
+      "or",
+      "der"
     ],
     "phonetic": "/ˈɔrdər/",
     "meaning": "次序"
@@ -5295,7 +5408,8 @@ window.VOCABULARY = [
   {
     "word": "focus",
     "chunks": [
-      "focus"
+      "fo",
+      "cus"
     ],
     "phonetic": "/ˈfoʊkɪs/",
     "meaning": "焦点"
@@ -5328,7 +5442,8 @@ window.VOCABULARY = [
   {
     "word": "upon",
     "chunks": [
-      "upon"
+      "up",
+      "on"
     ],
     "phonetic": "/əˈpɑn/",
     "meaning": "在...之上"
@@ -5362,7 +5477,8 @@ window.VOCABULARY = [
   {
     "word": "color",
     "chunks": [
-      "color"
+      "col",
+      "or"
     ],
     "phonetic": "/ˈkələr/",
     "meaning": "颜色"
@@ -5446,7 +5562,8 @@ window.VOCABULARY = [
   {
     "word": "enter",
     "chunks": [
-      "enter"
+      "en",
+      "ter"
     ],
     "phonetic": "/ˈɛnər/",
     "meaning": "进入"
@@ -5454,7 +5571,8 @@ window.VOCABULARY = [
   {
     "word": "common",
     "chunks": [
-      "common"
+      "com",
+      "mon"
     ],
     "phonetic": "/ˈkɑmən/",
     "meaning": "通常的"
@@ -5478,7 +5596,8 @@ window.VOCABULARY = [
   {
     "word": "natural",
     "chunks": [
-      "natu",
+      "nat",
+      "u",
       "ral"
     ],
     "phonetic": "/ˈnæʧərəl/",
@@ -5514,7 +5633,8 @@ window.VOCABULARY = [
     "word": "significant",
     "chunks": [
       "sig",
-      "nifi",
+      "nif",
+      "i",
       "cant"
     ],
     "phonetic": "/sɪgˈnɪfɪkənt/",
@@ -5524,7 +5644,8 @@ window.VOCABULARY = [
     "word": "similar",
     "chunks": [
       "sim",
-      "ilar"
+      "i",
+      "lar"
     ],
     "phonetic": "/ˈsɪmələr/",
     "meaning": "相似的"
@@ -5584,7 +5705,8 @@ window.VOCABULARY = [
   {
     "word": "animal",
     "chunks": [
-      "ani",
+      "an",
+      "i",
       "mal"
     ],
     "phonetic": "/ˈænəməl/",
@@ -5610,7 +5732,8 @@ window.VOCABULARY = [
   {
     "word": "decade",
     "chunks": [
-      "decade"
+      "dec",
+      "ade"
     ],
     "phonetic": "/ˈdɛkeɪd/",
     "meaning": "十年"
@@ -5644,7 +5767,8 @@ window.VOCABULARY = [
   {
     "word": "seven",
     "chunks": [
-      "seven"
+      "sev",
+      "en"
     ],
     "phonetic": "/ˈsɛvən/",
     "meaning": "七"
@@ -5660,7 +5784,8 @@ window.VOCABULARY = [
   {
     "word": "artist",
     "chunks": [
-      "artist"
+      "ar",
+      "tist"
     ],
     "phonetic": "/ˈɑrtɪst/",
     "meaning": "艺术家"
@@ -5745,7 +5870,8 @@ window.VOCABULARY = [
   {
     "word": "happy",
     "chunks": [
-      "happy"
+      "hap",
+      "py"
     ],
     "phonetic": "/ˈhæpi/",
     "meaning": "快乐的"
@@ -5823,7 +5949,8 @@ window.VOCABULARY = [
   {
     "word": "occur",
     "chunks": [
-      "occur"
+      "oc",
+      "cur"
     ],
     "phonetic": "/əˈkər/",
     "meaning": "发生"
@@ -5831,7 +5958,9 @@ window.VOCABULARY = [
   {
     "word": "media",
     "chunks": [
-      "media"
+      "me",
+      "di",
+      "a"
     ],
     "phonetic": "/ˈmidiə/",
     "meaning": "媒体"
@@ -5839,7 +5968,8 @@ window.VOCABULARY = [
   {
     "word": "ready",
     "chunks": [
-      "ready"
+      "rea",
+      "dy"
     ],
     "phonetic": "/ˈrɛdi/",
     "meaning": "预备好的状态"
@@ -5871,9 +6001,11 @@ window.VOCABULARY = [
   {
     "word": "individual",
     "chunks": [
-      "indi",
+      "in",
+      "di",
       "vid",
-      "ual"
+      "u",
+      "al"
     ],
     "phonetic": "/ˌɪndəˈvɪdʒəwəl/",
     "meaning": "个人；个体"
@@ -5891,7 +6023,8 @@ window.VOCABULARY = [
     "word": "quality",
     "chunks": [
       "qual",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/kˈwɑləti/",
     "meaning": "品质"
@@ -5917,7 +6050,8 @@ window.VOCABULARY = [
   {
     "word": "answer",
     "chunks": [
-      "answer"
+      "an",
+      "swer"
     ],
     "phonetic": "/ˈænsər/",
     "meaning": "回答；答案"
@@ -6008,7 +6142,8 @@ window.VOCABULARY = [
   {
     "word": "argue",
     "chunks": [
-      "argue"
+      "ar",
+      "gue"
     ],
     "phonetic": "/ˈɑrgju/",
     "meaning": "提出理由"
@@ -6034,8 +6169,10 @@ window.VOCABULARY = [
   {
     "word": "particularly",
     "chunks": [
-      "partic",
-      "ular",
+      "par",
+      "tic",
+      "u",
+      "lar",
       "ly"
     ],
     "phonetic": "/ˌpɑrˈtɪkjələrli/",
@@ -6044,7 +6181,8 @@ window.VOCABULARY = [
   {
     "word": "amount",
     "chunks": [
-      "amount"
+      "a",
+      "mount"
     ],
     "phonetic": "/əˈmaʊnt/",
     "meaning": "总数"
@@ -6053,7 +6191,8 @@ window.VOCABULARY = [
     "word": "ability",
     "chunks": [
       "abil",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/əˈbɪləˌti/",
     "meaning": "能力"
@@ -6214,7 +6353,8 @@ window.VOCABULARY = [
     "word": "physical",
     "chunks": [
       "phys",
-      "ical"
+      "i",
+      "cal"
     ],
     "phonetic": "/ˈfɪzɪkəl/",
     "meaning": "身体的"
@@ -6293,7 +6433,9 @@ window.VOCABULARY = [
   {
     "word": "analysis",
     "chunks": [
-      "analy",
+      "a",
+      "nal",
+      "y",
       "sis"
     ],
     "phonetic": "/æˈnælɪsɪs/",
@@ -6302,7 +6444,8 @@ window.VOCABULARY = [
   {
     "word": "benefit",
     "chunks": [
-      "bene",
+      "ben",
+      "e",
       "fit"
     ],
     "phonetic": "/ˈbɛnəfɪt/",
@@ -6328,7 +6471,8 @@ window.VOCABULARY = [
   {
     "word": "lawyer",
     "chunks": [
-      "lawyer"
+      "law",
+      "yer"
     ],
     "phonetic": "/ˈlɔjər/",
     "meaning": "律师"
@@ -6336,7 +6480,8 @@ window.VOCABULARY = [
   {
     "word": "present",
     "chunks": [
-      "present"
+      "pre",
+      "sent"
     ],
     "phonetic": "/ˈprɛzənt/",
     "meaning": "现在"
@@ -6353,8 +6498,10 @@ window.VOCABULARY = [
   {
     "word": "environmental",
     "chunks": [
-      "envi",
-      "ronmen",
+      "en",
+      "vi",
+      "ron",
+      "men",
       "tal"
     ],
     "phonetic": "/ɪnˌvaɪrənˈmɛnəl/",
@@ -6408,7 +6555,8 @@ window.VOCABULARY = [
     "chunks": [
       "op",
       "er",
-      "ation"
+      "a",
+      "tion"
     ],
     "phonetic": "/ˌɑpərˈeɪʃən/",
     "meaning": "操作"
@@ -6461,7 +6609,8 @@ window.VOCABULARY = [
     "chunks": [
       "au",
       "thor",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/əˈθɔrəti/",
     "meaning": "权力"
@@ -6545,7 +6694,8 @@ window.VOCABULARY = [
     "word": "strategy",
     "chunks": [
       "strat",
-      "egy"
+      "e",
+      "gy"
     ],
     "phonetic": "/ˈstrætədʒi/",
     "meaning": "战略"
@@ -6606,9 +6756,10 @@ window.VOCABULARY = [
   {
     "word": "democratic",
     "chunks": [
-      "demo",
-      "cra",
-      "tic"
+      "de",
+      "mo",
+      "crat",
+      "ic"
     ],
     "phonetic": "/ˌdɛməˈkrætɪk/",
     "meaning": "民主的"
@@ -6624,7 +6775,8 @@ window.VOCABULARY = [
   {
     "word": "environment",
     "chunks": [
-      "envi",
+      "en",
+      "vi",
       "ron",
       "ment"
     ],
@@ -6651,7 +6803,8 @@ window.VOCABULARY = [
     "word": "various",
     "chunks": [
       "var",
-      "ious"
+      "i",
+      "ous"
     ],
     "phonetic": "/ˈvɛriəs/",
     "meaning": "不同的"
@@ -6659,7 +6812,8 @@ window.VOCABULARY = [
   {
     "word": "rather",
     "chunks": [
-      "rather"
+      "rat",
+      "her"
     ],
     "phonetic": "/ˈrəðər/",
     "meaning": "宁可"
@@ -6683,9 +6837,9 @@ window.VOCABULARY = [
   {
     "word": "executive",
     "chunks": [
-      "ex",
-      "ec",
-      "utive"
+      "exe",
+      "cu",
+      "tive"
     ],
     "phonetic": "/ɪgˈzɛkjətɪv/",
     "meaning": "行政的；高管"
@@ -6762,7 +6916,8 @@ window.VOCABULARY = [
   {
     "word": "enjoy",
     "chunks": [
-      "enjoy"
+      "en",
+      "joy"
     ],
     "phonetic": "/ˌɛnˈdʒɔɪ/",
     "meaning": "享受"
@@ -6779,7 +6934,8 @@ window.VOCABULARY = [
   {
     "word": "legal",
     "chunks": [
-      "legal"
+      "le",
+      "gal"
     ],
     "phonetic": "/ˈligəl/",
     "meaning": "法律的"
@@ -6805,7 +6961,8 @@ window.VOCABULARY = [
   {
     "word": "final",
     "chunks": [
-      "final"
+      "fi",
+      "nal"
     ],
     "phonetic": "/ˈfaɪnəl/",
     "meaning": "期末考试"
@@ -6838,7 +6995,9 @@ window.VOCABULARY = [
   {
     "word": "memory",
     "chunks": [
-      "memory"
+      "mem",
+      "o",
+      "ry"
     ],
     "phonetic": "/ˈmɛməri/",
     "meaning": "记忆"
@@ -6854,7 +7013,8 @@ window.VOCABULARY = [
   {
     "word": "above",
     "chunks": [
-      "above"
+      "a",
+      "bove"
     ],
     "phonetic": "/əˈbəv/",
     "meaning": "在上方"
@@ -6896,7 +7056,8 @@ window.VOCABULARY = [
   {
     "word": "trial",
     "chunks": [
-      "trial"
+      "tri",
+      "al"
     ],
     "phonetic": "/traɪəl/",
     "meaning": "审判"
@@ -6929,7 +7090,8 @@ window.VOCABULARY = [
   {
     "word": "democrat",
     "chunks": [
-      "demo",
+      "dem",
+      "o",
       "crat"
     ],
     "phonetic": "/ˈdɛməˌkræt/",
@@ -6938,7 +7100,9 @@ window.VOCABULARY = [
   {
     "word": "radio",
     "chunks": [
-      "radio"
+      "ra",
+      "di",
+      "o"
     ],
     "phonetic": "/ˈreɪdiˌoʊ/",
     "meaning": "无线电"
@@ -6946,7 +7110,8 @@ window.VOCABULARY = [
   {
     "word": "visit",
     "chunks": [
-      "visit"
+      "vis",
+      "it"
     ],
     "phonetic": "/ˈvɪzɪt/",
     "meaning": "拜访"
@@ -6964,7 +7129,8 @@ window.VOCABULARY = [
   {
     "word": "avoid",
     "chunks": [
-      "avoid"
+      "a",
+      "void"
     ],
     "phonetic": "/əˈvɔɪd/",
     "meaning": "避免"
@@ -6981,7 +7147,8 @@ window.VOCABULARY = [
   {
     "word": "tonight",
     "chunks": [
-      "tonight"
+      "to",
+      "night"
     ],
     "phonetic": "/təˈnaɪt/",
     "meaning": "今晚"
@@ -7077,7 +7244,8 @@ window.VOCABULARY = [
     "word": "popular",
     "chunks": [
       "pop",
-      "ular"
+      "u",
+      "lar"
     ],
     "phonetic": "/ˈpɑpjələr/",
     "meaning": "受欢迎的；流行的"
@@ -7085,7 +7253,8 @@ window.VOCABULARY = [
   {
     "word": "traditional",
     "chunks": [
-      "tradi",
+      "tra",
+      "di",
       "tion",
       "al"
     ],
@@ -7095,7 +7264,8 @@ window.VOCABULARY = [
   {
     "word": "onto",
     "chunks": [
-      "onto"
+      "on",
+      "to"
     ],
     "phonetic": "/ˈɔntu/",
     "meaning": "在...之上"
@@ -7122,7 +7292,8 @@ window.VOCABULARY = [
   {
     "word": "weapon",
     "chunks": [
-      "weapon"
+      "wea",
+      "pon"
     ],
     "phonetic": "/ˈwɛpən/",
     "meaning": "武器"
@@ -7183,7 +7354,8 @@ window.VOCABULARY = [
   {
     "word": "apply",
     "chunks": [
-      "apply"
+      "ap",
+      "ply"
     ],
     "phonetic": "/əˈplaɪ/",
     "meaning": "涂"
@@ -7261,7 +7433,8 @@ window.VOCABULARY = [
     "chunks": [
       "par",
       "tic",
-      "ular"
+      "u",
+      "lar"
     ],
     "phonetic": "/ˌpɑˈtɪkjələr/",
     "meaning": "特定的；特别的"
@@ -7287,7 +7460,8 @@ window.VOCABULARY = [
   {
     "word": "politics",
     "chunks": [
-      "poli",
+      "pol",
+      "i",
       "tics"
     ],
     "phonetic": "/ˈpɑləˌtɪks/",
@@ -7369,7 +7543,8 @@ window.VOCABULARY = [
   {
     "word": "evening",
     "chunks": [
-      "evening"
+      "even",
+      "ing"
     ],
     "phonetic": "/ˈivnɪŋ/",
     "meaning": "傍晚"
@@ -7413,7 +7588,8 @@ window.VOCABULARY = [
   {
     "word": "unit",
     "chunks": [
-      "unit"
+      "u",
+      "nit"
     ],
     "phonetic": "/ˈjunɪt/",
     "meaning": "单位"
@@ -7429,7 +7605,8 @@ window.VOCABULARY = [
   {
     "word": "adult",
     "chunks": [
-      "adult"
+      "a",
+      "dult"
     ],
     "phonetic": "/ˈædəlt/",
     "meaning": "成人"
@@ -7437,7 +7614,8 @@ window.VOCABULARY = [
   {
     "word": "worry",
     "chunks": [
-      "worry"
+      "wor",
+      "ry"
     ],
     "phonetic": "/ˈwəri/",
     "meaning": "担心"
@@ -7479,8 +7657,8 @@ window.VOCABULARY = [
     "word": "specific",
     "chunks": [
       "spe",
-      "ci",
-      "fic"
+      "cif",
+      "ic"
     ],
     "phonetic": "/spɪˈsɪfɪk/",
     "meaning": "特效药"
@@ -7506,7 +7684,8 @@ window.VOCABULARY = [
   {
     "word": "necessary",
     "chunks": [
-      "neces",
+      "nec",
+      "es",
       "sary"
     ],
     "phonetic": "/ˈnɛsəˌsɛri/",
@@ -7550,7 +7729,8 @@ window.VOCABULARY = [
   {
     "word": "institution",
     "chunks": [
-      "insti",
+      "in",
+      "sti",
       "tu",
       "tion"
     ],
@@ -7648,7 +7828,8 @@ window.VOCABULARY = [
   {
     "word": "method",
     "chunks": [
-      "method"
+      "meth",
+      "od"
     ],
     "phonetic": "/ˈmɛθəd/",
     "meaning": "方法"
@@ -7665,7 +7846,8 @@ window.VOCABULARY = [
   {
     "word": "magazine",
     "chunks": [
-      "maga",
+      "mag",
+      "a",
       "zine"
     ],
     "phonetic": "/ˈmægəˌzin/",
@@ -7674,7 +7856,8 @@ window.VOCABULARY = [
   {
     "word": "hotel",
     "chunks": [
-      "hotel"
+      "ho",
+      "tel"
     ],
     "phonetic": "/hoʊˈtɛl/",
     "meaning": "旅馆"
@@ -7700,7 +7883,8 @@ window.VOCABULARY = [
   {
     "word": "heavy",
     "chunks": [
-      "heavy"
+      "hea",
+      "vy"
     ],
     "phonetic": "/ˈhɛvi/",
     "meaning": "重的"
@@ -7709,7 +7893,8 @@ window.VOCABULARY = [
     "word": "sexual",
     "chunks": [
       "sex",
-      "ual"
+      "u",
+      "al"
     ],
     "phonetic": "/ˈsɛkʃuəl/",
     "meaning": "性的"
@@ -7809,7 +7994,8 @@ window.VOCABULARY = [
   {
     "word": "agent",
     "chunks": [
-      "agent"
+      "a",
+      "gent"
     ],
     "phonetic": "/ˈeɪdʒənt/",
     "meaning": "代理商"
@@ -7817,7 +8003,8 @@ window.VOCABULARY = [
   {
     "word": "owner",
     "chunks": [
-      "owner"
+      "own",
+      "er"
     ],
     "phonetic": "/ˈoʊnər/",
     "meaning": "拥有者"
@@ -7842,7 +8029,8 @@ window.VOCABULARY = [
   {
     "word": "ahead",
     "chunks": [
-      "ahead"
+      "a",
+      "head"
     ],
     "phonetic": "/əˈhɛd/",
     "meaning": "领先的"
@@ -7852,7 +8040,8 @@ window.VOCABULARY = [
     "chunks": [
       "gen",
       "er",
-      "ation"
+      "a",
+      "tion"
     ],
     "phonetic": "/ˌdʒɛnərˈeɪʃən/",
     "meaning": "一代"
@@ -7888,7 +8077,8 @@ window.VOCABULARY = [
   {
     "word": "item",
     "chunks": [
-      "item"
+      "i",
+      "tem"
     ],
     "phonetic": "/ˈaɪtəm/",
     "meaning": "项目"
@@ -7898,7 +8088,8 @@ window.VOCABULARY = [
     "chunks": [
       "re",
       "al",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/ˌriˈæləˌti/",
     "meaning": "现实"
@@ -7930,7 +8121,8 @@ window.VOCABULARY = [
   {
     "word": "violence",
     "chunks": [
-      "vio",
+      "vi",
+      "o",
       "lence"
     ],
     "phonetic": "/ˈvaɪələns/",
@@ -7939,7 +8131,8 @@ window.VOCABULARY = [
   {
     "word": "total",
     "chunks": [
-      "total"
+      "to",
+      "tal"
     ],
     "phonetic": "/ˈtoʊtəl/",
     "meaning": "全体的"
@@ -8038,7 +8231,8 @@ window.VOCABULARY = [
   {
     "word": "positive",
     "chunks": [
-      "posi",
+      "pos",
+      "i",
       "tive"
     ],
     "phonetic": "/ˈpɑzətɪv/",
@@ -8047,7 +8241,8 @@ window.VOCABULARY = [
   {
     "word": "civil",
     "chunks": [
-      "civil"
+      "civ",
+      "il"
     ],
     "phonetic": "/ˈsɪvəl/",
     "meaning": "市民的"
@@ -8055,7 +8250,8 @@ window.VOCABULARY = [
   {
     "word": "kitchen",
     "chunks": [
-      "kitchen"
+      "kit",
+      "chen"
     ],
     "phonetic": "/ˈkɪʧən/",
     "meaning": "厨房"
@@ -8141,7 +8337,8 @@ window.VOCABULARY = [
   {
     "word": "capital",
     "chunks": [
-      "capi",
+      "cap",
+      "i",
       "tal"
     ],
     "phonetic": "/ˈkæpɪtəl/",
@@ -8185,9 +8382,12 @@ window.VOCABULARY = [
   {
     "word": "responsibility",
     "chunks": [
-      "respon",
-      "sibil",
-      "ity"
+      "re",
+      "spon",
+      "si",
+      "bil",
+      "i",
+      "ty"
     ],
     "phonetic": "/riˌspɑnsəˈbɪləti/",
     "meaning": "责任"
@@ -8230,7 +8430,8 @@ window.VOCABULARY = [
   {
     "word": "interesting",
     "chunks": [
-      "inter",
+      "in",
+      "ter",
       "est",
       "ing"
     ],
@@ -8320,7 +8521,8 @@ window.VOCABULARY = [
   {
     "word": "citizen",
     "chunks": [
-      "citi",
+      "cit",
+      "i",
       "zen"
     ],
     "phonetic": "/ˈsɪtɪzən/",
@@ -8331,7 +8533,8 @@ window.VOCABULARY = [
     "chunks": [
       "ma",
       "jor",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/məˈdʒɔrəti/",
     "meaning": "多数"
@@ -8363,7 +8566,8 @@ window.VOCABULARY = [
   {
     "word": "admit",
     "chunks": [
-      "admit"
+      "ad",
+      "mit"
     ],
     "phonetic": "/ədˈmɪt/",
     "meaning": "承认"
@@ -8405,7 +8609,8 @@ window.VOCABULARY = [
   {
     "word": "professional",
     "chunks": [
-      "profes",
+      "pro",
+      "fes",
       "sion",
       "al"
     ],
@@ -8432,7 +8637,8 @@ window.VOCABULARY = [
   {
     "word": "alone",
     "chunks": [
-      "alone"
+      "a",
+      "lone"
     ],
     "phonetic": "/əˈloʊn/",
     "meaning": "孤独的"
@@ -8441,7 +8647,8 @@ window.VOCABULARY = [
     "word": "customer",
     "chunks": [
       "cus",
-      "tomer"
+      "tom",
+      "er"
     ],
     "phonetic": "/ˈkəstəmər/",
     "meaning": "顾客"
@@ -8486,7 +8693,8 @@ window.VOCABULARY = [
     "word": "participant",
     "chunks": [
       "par",
-      "tici",
+      "tic",
+      "i",
       "pant"
     ],
     "phonetic": "/pɑrˈtɪsəpənt/",
@@ -8504,7 +8712,8 @@ window.VOCABULARY = [
   {
     "word": "university",
     "chunks": [
-      "univer",
+      "uni",
+      "ver",
       "si",
       "ty"
     ],
@@ -8514,7 +8723,8 @@ window.VOCABULARY = [
   {
     "word": "eventually",
     "chunks": [
-      "eventu",
+      "even",
+      "tu",
       "al",
       "ly"
     ],
@@ -8532,7 +8742,8 @@ window.VOCABULARY = [
   {
     "word": "forest",
     "chunks": [
-      "forest"
+      "for",
+      "est"
     ],
     "phonetic": "/ˈfɔrɪst/",
     "meaning": "森林"
@@ -8540,7 +8751,9 @@ window.VOCABULARY = [
   {
     "word": "video",
     "chunks": [
-      "video"
+      "vid",
+      "e",
+      "o"
     ],
     "phonetic": "/ˈvɪdioʊ/",
     "meaning": "视频"
@@ -8548,7 +8761,8 @@ window.VOCABULARY = [
   {
     "word": "global",
     "chunks": [
-      "global"
+      "glob",
+      "al"
     ],
     "phonetic": "/ˈgloʊbəl/",
     "meaning": "全球的"
@@ -8556,7 +8770,8 @@ window.VOCABULARY = [
   {
     "word": "senate",
     "chunks": [
-      "senate"
+      "sen",
+      "ate"
     ],
     "phonetic": "/ˈsɛnɪt/",
     "meaning": "参议院"
@@ -8573,7 +8788,8 @@ window.VOCABULARY = [
   {
     "word": "access",
     "chunks": [
-      "access"
+      "ac",
+      "cess"
     ],
     "phonetic": "/ˈækˌsɛs/",
     "meaning": "接触"
@@ -8598,7 +8814,8 @@ window.VOCABULARY = [
   {
     "word": "publish",
     "chunks": [
-      "publish"
+      "pub",
+      "lish"
     ],
     "phonetic": "/ˈpəblɪʃ/",
     "meaning": "出版"
@@ -8633,7 +8850,8 @@ window.VOCABULARY = [
   {
     "word": "labor",
     "chunks": [
-      "labor"
+      "la",
+      "bor"
     ],
     "phonetic": "/ˈleɪbər/",
     "meaning": "劳动"
@@ -8641,7 +8859,8 @@ window.VOCABULARY = [
   {
     "word": "opinion",
     "chunks": [
-      "opinion"
+      "opin",
+      "ion"
     ],
     "phonetic": "/əˈpɪnjən/",
     "meaning": "意见"
@@ -8649,7 +8868,8 @@ window.VOCABULARY = [
   {
     "word": "credit",
     "chunks": [
-      "credit"
+      "cred",
+      "it"
     ],
     "phonetic": "/ˈkrɛdɪt/",
     "meaning": "信用"
@@ -8658,7 +8878,8 @@ window.VOCABULARY = [
     "word": "critical",
     "chunks": [
       "crit",
-      "ical"
+      "i",
+      "cal"
     ],
     "phonetic": "/ˈkrɪtɪkəl/",
     "meaning": "关键的"
@@ -8666,7 +8887,8 @@ window.VOCABULARY = [
   {
     "word": "corner",
     "chunks": [
-      "corner"
+      "cor",
+      "ner"
     ],
     "phonetic": "/ˈkɔrnər/",
     "meaning": "角落"
@@ -8692,7 +8914,8 @@ window.VOCABULARY = [
   {
     "word": "version",
     "chunks": [
-      "version"
+      "ver",
+      "sion"
     ],
     "phonetic": "/ˈvərʒən/",
     "meaning": "一种描述"
@@ -8708,7 +8931,8 @@ window.VOCABULARY = [
   {
     "word": "safety",
     "chunks": [
-      "safety"
+      "safe",
+      "ty"
     ],
     "phonetic": "/ˈseɪfti/",
     "meaning": "安全"
@@ -8736,7 +8960,8 @@ window.VOCABULARY = [
   {
     "word": "original",
     "chunks": [
-      "origi",
+      "orig",
+      "i",
       "nal"
     ],
     "phonetic": "/ərˈɪdʒənəl/",
@@ -8780,7 +9005,8 @@ window.VOCABULARY = [
   {
     "word": "species",
     "chunks": [
-      "species"
+      "spe",
+      "cies"
     ],
     "phonetic": "/ˈspiʃiz/",
     "meaning": "种"
@@ -8788,8 +9014,10 @@ window.VOCABULARY = [
   {
     "word": "immediately",
     "chunks": [
-      "imme",
-      "diate",
+      "im",
+      "me",
+      "di",
+      "ate",
       "ly"
     ],
     "phonetic": "/ˌɪˈmiˌdiətli/",
@@ -8806,7 +9034,8 @@ window.VOCABULARY = [
   {
     "word": "basic",
     "chunks": [
-      "basic"
+      "ba",
+      "sic"
     ],
     "phonetic": "/ˈbeɪsɪk/",
     "meaning": "基本原理"
@@ -8847,7 +9076,8 @@ window.VOCABULARY = [
   {
     "word": "absolutely",
     "chunks": [
-      "abso",
+      "ab",
+      "so",
       "lute",
       "ly"
     ],
@@ -8874,7 +9104,8 @@ window.VOCABULARY = [
   {
     "word": "achieve",
     "chunks": [
-      "achieve"
+      "ac",
+      "hieve"
     ],
     "phonetic": "/əˈʧiv/",
     "meaning": "完成"
@@ -8882,7 +9113,8 @@ window.VOCABULARY = [
   {
     "word": "object",
     "chunks": [
-      "object"
+      "ob",
+      "ject"
     ],
     "phonetic": "/ˈɑbdʒɛkt/",
     "meaning": "物体"
@@ -8908,7 +9140,8 @@ window.VOCABULARY = [
   {
     "word": "refer",
     "chunks": [
-      "refer"
+      "re",
+      "fer"
     ],
     "phonetic": "/rɪˈfər/",
     "meaning": "提交"
@@ -8916,7 +9149,8 @@ window.VOCABULARY = [
   {
     "word": "client",
     "chunks": [
-      "client"
+      "cli",
+      "ent"
     ],
     "phonetic": "/klaɪənt/",
     "meaning": "客户"
@@ -8943,7 +9177,8 @@ window.VOCABULARY = [
   {
     "word": "perfect",
     "chunks": [
-      "perfect"
+      "per",
+      "fect"
     ],
     "phonetic": "/ˈpərˌfɪkt/",
     "meaning": "完成时"
@@ -8978,7 +9213,8 @@ window.VOCABULARY = [
   {
     "word": "conversation",
     "chunks": [
-      "conver",
+      "con",
+      "ver",
       "sa",
       "tion"
     ],
@@ -8988,7 +9224,9 @@ window.VOCABULARY = [
   {
     "word": "examine",
     "chunks": [
-      "examine"
+      "ex",
+      "am",
+      "ine"
     ],
     "phonetic": "/ɪgˈzæmɪn/",
     "meaning": "检查"
@@ -9031,7 +9269,9 @@ window.VOCABULARY = [
   {
     "word": "variety",
     "chunks": [
-      "variety"
+      "va",
+      "ri",
+      "ety"
     ],
     "phonetic": "/vərˈaɪəti/",
     "meaning": "多样"
@@ -9056,8 +9296,10 @@ window.VOCABULARY = [
   {
     "word": "investigation",
     "chunks": [
-      "inves",
-      "tiga",
+      "in",
+      "ves",
+      "ti",
+      "ga",
       "tion"
     ],
     "phonetic": "/ˌɪnˌvɛstəˈgeɪʃən/",
@@ -9066,7 +9308,9 @@ window.VOCABULARY = [
   {
     "word": "nuclear",
     "chunks": [
-      "nuclear"
+      "nu",
+      "cle",
+      "ar"
     ],
     "phonetic": "/ˈnukliər/",
     "meaning": "核的"
@@ -9075,7 +9319,8 @@ window.VOCABULARY = [
     "word": "researcher",
     "chunks": [
       "re",
-      "searcher"
+      "search",
+      "er"
     ],
     "phonetic": "/ˈrisərʧər/",
     "meaning": "研究人员"
@@ -9100,7 +9345,8 @@ window.VOCABULARY = [
   {
     "word": "spirit",
     "chunks": [
-      "spirit"
+      "spir",
+      "it"
     ],
     "phonetic": "/ˈspɪrɪt/",
     "meaning": "精神"
@@ -9117,7 +9363,8 @@ window.VOCABULARY = [
   {
     "word": "british",
     "chunks": [
-      "british"
+      "brit",
+      "ish"
     ],
     "phonetic": "/ˈbrɪtɪʃ/",
     "meaning": "英国的"
@@ -9161,7 +9408,8 @@ window.VOCABULARY = [
   {
     "word": "feature",
     "chunks": [
-      "feature"
+      "fea",
+      "ture"
     ],
     "phonetic": "/ˈfiʧər/",
     "meaning": "面孔的一部分"
@@ -9195,7 +9443,8 @@ window.VOCABULARY = [
   {
     "word": "dozen",
     "chunks": [
-      "dozen"
+      "do",
+      "zen"
     ],
     "phonetic": "/ˈdəzən/",
     "meaning": "打"
@@ -9203,9 +9452,11 @@ window.VOCABULARY = [
   {
     "word": "possibility",
     "chunks": [
-      "possi",
+      "pos",
+      "si",
       "bil",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/ˌpɑsəˈbɪləˌti/",
     "meaning": "可能性"
@@ -9233,7 +9484,8 @@ window.VOCABULARY = [
   {
     "word": "battle",
     "chunks": [
-      "battle"
+      "bat",
+      "tle"
     ],
     "phonetic": "/ˈbætəl/",
     "meaning": "战役"
@@ -9259,7 +9511,8 @@ window.VOCABULARY = [
   {
     "word": "generally",
     "chunks": [
-      "gener",
+      "gen",
+      "er",
       "al",
       "ly"
     ],
@@ -9269,7 +9522,8 @@ window.VOCABULARY = [
   {
     "word": "african",
     "chunks": [
-      "african"
+      "afric",
+      "an"
     ],
     "phonetic": "/ˈæfrɪkɑn/",
     "meaning": "非洲人"
@@ -9277,7 +9531,8 @@ window.VOCABULARY = [
   {
     "word": "sorry",
     "chunks": [
-      "sorry"
+      "sor",
+      "ry"
     ],
     "phonetic": "/ˈsɑri/",
     "meaning": "抱歉的"
@@ -9285,7 +9540,8 @@ window.VOCABULARY = [
   {
     "word": "crisis",
     "chunks": [
-      "crisis"
+      "cri",
+      "sis"
     ],
     "phonetic": "/ˈkraɪsəs/",
     "meaning": "危机"
@@ -9327,7 +9583,9 @@ window.VOCABULARY = [
   {
     "word": "easily",
     "chunks": [
-      "easily"
+      "eas",
+      "i",
+      "ly"
     ],
     "phonetic": "/ˈizəli/",
     "meaning": "容易地"
@@ -9343,7 +9601,9 @@ window.VOCABULARY = [
   {
     "word": "element",
     "chunks": [
-      "element"
+      "el",
+      "e",
+      "ment"
     ],
     "phonetic": "/ˈɛləmənt/",
     "meaning": "元件"
@@ -9351,7 +9611,8 @@ window.VOCABULARY = [
   {
     "word": "status",
     "chunks": [
-      "status"
+      "sta",
+      "tus"
     ],
     "phonetic": "/ˈstætəs/",
     "meaning": "状态"
@@ -9359,7 +9620,8 @@ window.VOCABULARY = [
   {
     "word": "vision",
     "chunks": [
-      "vision"
+      "vi",
+      "sion"
     ],
     "phonetic": "/ˈvɪʒən/",
     "meaning": "视觉"
@@ -9367,7 +9629,8 @@ window.VOCABULARY = [
   {
     "word": "normal",
     "chunks": [
-      "normal"
+      "nor",
+      "mal"
     ],
     "phonetic": "/ˈnɔrməl/",
     "meaning": "常态"
@@ -9375,7 +9638,8 @@ window.VOCABULARY = [
   {
     "word": "chinese",
     "chunks": [
-      "chinese"
+      "chi",
+      "nese"
     ],
     "phonetic": "/ʧaɪˈniz/",
     "meaning": "中文"
@@ -9409,7 +9673,8 @@ window.VOCABULARY = [
   {
     "word": "slowly",
     "chunks": [
-      "slowly"
+      "slow",
+      "ly"
     ],
     "phonetic": "/sˈloʊli/",
     "meaning": "慢慢地"
@@ -9435,7 +9700,8 @@ window.VOCABULARY = [
   {
     "word": "driver",
     "chunks": [
-      "driver"
+      "driv",
+      "er"
     ],
     "phonetic": "/ˈdraɪvər/",
     "meaning": "驾驶员"
@@ -9443,7 +9709,8 @@ window.VOCABULARY = [
   {
     "word": "attempt",
     "chunks": [
-      "attempt"
+      "at",
+      "tempt"
     ],
     "phonetic": "/əˈtɛmpt/",
     "meaning": "尝试"
@@ -9533,7 +9800,8 @@ window.VOCABULARY = [
   {
     "word": "handle",
     "chunks": [
-      "handle"
+      "han",
+      "dle"
     ],
     "phonetic": "/ˈhændəl/",
     "meaning": "柄"
@@ -9550,7 +9818,8 @@ window.VOCABULARY = [
   {
     "word": "survey",
     "chunks": [
-      "survey"
+      "sur",
+      "vey"
     ],
     "phonetic": "/ˈsərˌveɪ/",
     "meaning": "纵览"
@@ -9577,7 +9846,8 @@ window.VOCABULARY = [
   {
     "word": "winter",
     "chunks": [
-      "winter"
+      "win",
+      "ter"
     ],
     "phonetic": "/ˈwɪntər/",
     "meaning": "冬季"
@@ -9585,7 +9855,8 @@ window.VOCABULARY = [
   {
     "word": "village",
     "chunks": [
-      "village"
+      "vil",
+      "lage"
     ],
     "phonetic": "/ˈvɪlɪdʒ/",
     "meaning": "村庄"
@@ -9593,7 +9864,9 @@ window.VOCABULARY = [
   {
     "word": "soviet",
     "chunks": [
-      "soviet"
+      "so",
+      "vi",
+      "et"
     ],
     "phonetic": "/ˈsoʊviˌɛt/",
     "meaning": "代表会议"
@@ -9601,7 +9874,8 @@ window.VOCABULARY = [
   {
     "word": "refuse",
     "chunks": [
-      "refuse"
+      "re",
+      "fuse"
     ],
     "phonetic": "/ˈrɛfˌjuz/",
     "meaning": "拒绝"
@@ -9617,8 +9891,10 @@ window.VOCABULARY = [
   {
     "word": "communication",
     "chunks": [
-      "commu",
-      "nica",
+      "com",
+      "mu",
+      "ni",
+      "ca",
       "tion"
     ],
     "phonetic": "/kəmˌjunəˈkeɪʃən/",
@@ -9643,7 +9919,8 @@ window.VOCABULARY = [
   {
     "word": "resident",
     "chunks": [
-      "resi",
+      "res",
+      "i",
       "dent"
     ],
     "phonetic": "/ˈrɛzɪdənt/",
@@ -9713,7 +9990,8 @@ window.VOCABULARY = [
   {
     "word": "independent",
     "chunks": [
-      "inde",
+      "in",
+      "de",
       "pen",
       "dent"
     ],
@@ -9740,7 +10018,8 @@ window.VOCABULARY = [
   {
     "word": "reader",
     "chunks": [
-      "reader"
+      "read",
+      "er"
     ],
     "phonetic": "/ˈridər/",
     "meaning": "读者"
@@ -9792,7 +10071,8 @@ window.VOCABULARY = [
   {
     "word": "willing",
     "chunks": [
-      "willing"
+      "will",
+      "ing"
     ],
     "phonetic": "/ˈwɪlɪŋ/",
     "meaning": "愿意的"
@@ -9826,7 +10106,8 @@ window.VOCABULARY = [
   {
     "word": "obviously",
     "chunks": [
-      "obvi",
+      "ob",
+      "vi",
       "ous",
       "ly"
     ],
@@ -9844,7 +10125,8 @@ window.VOCABULARY = [
   {
     "word": "interested",
     "chunks": [
-      "inter",
+      "in",
+      "ter",
       "est",
       "ed"
     ],
@@ -9854,7 +10136,8 @@ window.VOCABULARY = [
   {
     "word": "target",
     "chunks": [
-      "target"
+      "tar",
+      "get"
     ],
     "phonetic": "/ˈtərgət/",
     "meaning": "目标"
@@ -9862,7 +10145,8 @@ window.VOCABULARY = [
   {
     "word": "prison",
     "chunks": [
-      "prison"
+      "pris",
+      "on"
     ],
     "phonetic": "/ˈprɪzən/",
     "meaning": "监狱"
@@ -9887,7 +10171,8 @@ window.VOCABULARY = [
     "word": "reporter",
     "chunks": [
       "re",
-      "porter"
+      "port",
+      "er"
     ],
     "phonetic": "/rɪˈpɔrtər/",
     "meaning": "记者"
@@ -9904,7 +10189,9 @@ window.VOCABULARY = [
   {
     "word": "deliver",
     "chunks": [
-      "deliver"
+      "de",
+      "liv",
+      "er"
     ],
     "phonetic": "/dɪˈlɪvər/",
     "meaning": "递送"
@@ -9936,7 +10223,9 @@ window.VOCABULARY = [
   {
     "word": "vehicle",
     "chunks": [
-      "vehicle"
+      "ve",
+      "hi",
+      "cle"
     ],
     "phonetic": "/ˈviɪkəl/",
     "meaning": "交通工具"
@@ -9963,7 +10252,8 @@ window.VOCABULARY = [
     "chunks": [
       "fa",
       "cil",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/fəˈsɪlɪti/",
     "meaning": "容易"
@@ -9971,7 +10261,8 @@ window.VOCABULARY = [
   {
     "word": "understanding",
     "chunks": [
-      "under",
+      "un",
+      "der",
       "stand",
       "ing"
     ],
@@ -9981,7 +10272,9 @@ window.VOCABULARY = [
   {
     "word": "average",
     "chunks": [
-      "average"
+      "av",
+      "er",
+      "age"
     ],
     "phonetic": "/ˈævərɪdʒ/",
     "meaning": "平均"
@@ -9989,7 +10282,8 @@ window.VOCABULARY = [
   {
     "word": "emerge",
     "chunks": [
-      "emerge"
+      "e",
+      "merge"
     ],
     "phonetic": "/ˈimərdʒ/",
     "meaning": "浮现"
@@ -10041,7 +10335,8 @@ window.VOCABULARY = [
   {
     "word": "basis",
     "chunks": [
-      "basis"
+      "ba",
+      "sis"
     ],
     "phonetic": "/ˈbeɪsɪs/",
     "meaning": "基础"
@@ -10057,7 +10352,9 @@ window.VOCABULARY = [
   {
     "word": "operate",
     "chunks": [
-      "operate"
+      "op",
+      "er",
+      "ate"
     ],
     "phonetic": "/ˈɔpərˌeɪt/",
     "meaning": "操作"
@@ -10073,7 +10370,8 @@ window.VOCABULARY = [
   {
     "word": "sample",
     "chunks": [
-      "sample"
+      "sam",
+      "ple"
     ],
     "phonetic": "/ˈsæmpəl/",
     "meaning": "样品"
@@ -10091,7 +10389,8 @@ window.VOCABULARY = [
   {
     "word": "tiny",
     "chunks": [
-      "tiny"
+      "ti",
+      "ny"
     ],
     "phonetic": "/ˈtaɪni/",
     "meaning": "微小的"
@@ -10117,7 +10416,8 @@ window.VOCABULARY = [
   {
     "word": "settle",
     "chunks": [
-      "settle"
+      "set",
+      "tle"
     ],
     "phonetic": "/ˈsɛtəl/",
     "meaning": "有背长椅"
@@ -10142,7 +10442,8 @@ window.VOCABULARY = [
   {
     "word": "additional",
     "chunks": [
-      "addi",
+      "ad",
+      "di",
       "tion",
       "al"
     ],
@@ -10152,7 +10453,8 @@ window.VOCABULARY = [
   {
     "word": "highly",
     "chunks": [
-      "highly"
+      "high",
+      "ly"
     ],
     "phonetic": "/ˈhaɪli/",
     "meaning": "非常"
@@ -10170,7 +10472,8 @@ window.VOCABULARY = [
   {
     "word": "title",
     "chunks": [
-      "title"
+      "ti",
+      "tle"
     ],
     "phonetic": "/ˈtaɪtəl/",
     "meaning": "头衔"
@@ -10178,7 +10481,8 @@ window.VOCABULARY = [
   {
     "word": "mostly",
     "chunks": [
-      "mostly"
+      "most",
+      "ly"
     ],
     "phonetic": "/ˈmoʊstli/",
     "meaning": "大概"
@@ -10186,7 +10490,8 @@ window.VOCABULARY = [
   {
     "word": "lesson",
     "chunks": [
-      "lesson"
+      "les",
+      "son"
     ],
     "phonetic": "/ˈlɛsən/",
     "meaning": "课"
@@ -10202,7 +10507,8 @@ window.VOCABULARY = [
   {
     "word": "river",
     "chunks": [
-      "river"
+      "riv",
+      "er"
     ],
     "phonetic": "/ˈrɪvər/",
     "meaning": "河"
@@ -10210,7 +10516,8 @@ window.VOCABULARY = [
   {
     "word": "promote",
     "chunks": [
-      "promote"
+      "pro",
+      "mote"
     ],
     "phonetic": "/prəˈmoʊt/",
     "meaning": "促进"
@@ -10218,7 +10525,8 @@ window.VOCABULARY = [
   {
     "word": "photo",
     "chunks": [
-      "photo"
+      "pho",
+      "to"
     ],
     "phonetic": "/ˈfoʊˌtoʊ/",
     "meaning": "相片"
@@ -10252,7 +10560,8 @@ window.VOCABULARY = [
   {
     "word": "marry",
     "chunks": [
-      "marry"
+      "mar",
+      "ry"
     ],
     "phonetic": "/ˈmɛri/",
     "meaning": "与...结婚"
@@ -10338,7 +10647,8 @@ window.VOCABULARY = [
   {
     "word": "border",
     "chunks": [
-      "border"
+      "bor",
+      "der"
     ],
     "phonetic": "/ˈbɔrdər/",
     "meaning": "边缘"
@@ -10346,7 +10656,8 @@ window.VOCABULARY = [
   {
     "word": "competition",
     "chunks": [
-      "compe",
+      "com",
+      "pe",
       "ti",
       "tion"
     ],
@@ -10364,7 +10675,8 @@ window.VOCABULARY = [
   {
     "word": "gather",
     "chunks": [
-      "gather"
+      "gath",
+      "er"
     ],
     "phonetic": "/ˈgæðər/",
     "meaning": "集合"
@@ -10372,7 +10684,8 @@ window.VOCABULARY = [
   {
     "word": "limit",
     "chunks": [
-      "limit"
+      "lim",
+      "it"
     ],
     "phonetic": "/ˈlɪmət/",
     "meaning": "界限"
@@ -10415,7 +10728,8 @@ window.VOCABULARY = [
     "chunks": [
       "as",
       "so",
-      "ciate"
+      "ci",
+      "ate"
     ],
     "phonetic": "/əˈsoʊʃiˌeɪt/",
     "meaning": "同伴"
@@ -10467,7 +10781,9 @@ window.VOCABULARY = [
   {
     "word": "annual",
     "chunks": [
-      "annual"
+      "an",
+      "nu",
+      "al"
     ],
     "phonetic": "/ˈænjuəl/",
     "meaning": "年刊"
@@ -10492,7 +10808,8 @@ window.VOCABULARY = [
   {
     "word": "affair",
     "chunks": [
-      "affair"
+      "af",
+      "fair"
     ],
     "phonetic": "/əˈfɛr/",
     "meaning": "事件"
@@ -10500,7 +10817,8 @@ window.VOCABULARY = [
   {
     "word": "responsible",
     "chunks": [
-      "respon",
+      "re",
+      "spon",
       "si",
       "ble"
     ],
@@ -10520,7 +10838,9 @@ window.VOCABULARY = [
   {
     "word": "regular",
     "chunks": [
-      "regular"
+      "reg",
+      "u",
+      "lar"
     ],
     "phonetic": "/ˈrɛgjələr/",
     "meaning": "规则的"
@@ -10562,7 +10882,8 @@ window.VOCABULARY = [
   {
     "word": "ignore",
     "chunks": [
-      "ignore"
+      "ig",
+      "nore"
     ],
     "phonetic": "/ˌɪgˈnɔr/",
     "meaning": "不理睬"
@@ -10578,7 +10899,8 @@ window.VOCABULARY = [
   {
     "word": "belief",
     "chunks": [
-      "belief"
+      "be",
+      "lief"
     ],
     "phonetic": "/bɪˈlif/",
     "meaning": "信念"
@@ -10604,7 +10926,8 @@ window.VOCABULARY = [
   {
     "word": "murder",
     "chunks": [
-      "murder"
+      "mur",
+      "der"
     ],
     "phonetic": "/ˈmərdər/",
     "meaning": "谋杀"
@@ -10639,7 +10962,9 @@ window.VOCABULARY = [
   {
     "word": "editor",
     "chunks": [
-      "editor"
+      "ed",
+      "i",
+      "tor"
     ],
     "phonetic": "/ˈɛdɪtər/",
     "meaning": "编者"
@@ -10656,7 +10981,8 @@ window.VOCABULARY = [
   {
     "word": "coffee",
     "chunks": [
-      "coffee"
+      "cof",
+      "fee"
     ],
     "phonetic": "/ˈkɔfi/",
     "meaning": "咖啡"
@@ -10665,7 +10991,8 @@ window.VOCABULARY = [
     "word": "document",
     "chunks": [
       "doc",
-      "ument"
+      "u",
+      "ment"
     ],
     "phonetic": "/ˈdɑkjəmɛnt/",
     "meaning": "文件"
@@ -10726,7 +11053,8 @@ window.VOCABULARY = [
   {
     "word": "female",
     "chunks": [
-      "female"
+      "fe",
+      "male"
     ],
     "phonetic": "/ˈfiˌmeɪl/",
     "meaning": "女性"
@@ -10750,7 +11078,8 @@ window.VOCABULARY = [
   {
     "word": "afraid",
     "chunks": [
-      "afraid"
+      "af",
+      "raid"
     ],
     "phonetic": "/əˈfreɪd/",
     "meaning": "害怕的"
@@ -10758,7 +11087,8 @@ window.VOCABULARY = [
   {
     "word": "quarter",
     "chunks": [
-      "quarter"
+      "quar",
+      "ter"
     ],
     "phonetic": "/kˈwɔrtər/",
     "meaning": "四分之一"
@@ -10775,7 +11105,8 @@ window.VOCABULARY = [
   {
     "word": "native",
     "chunks": [
-      "native"
+      "na",
+      "tive"
     ],
     "phonetic": "/ˈneɪtɪv/",
     "meaning": "本地人"
@@ -10801,7 +11132,8 @@ window.VOCABULARY = [
   {
     "word": "deny",
     "chunks": [
-      "deny"
+      "de",
+      "ny"
     ],
     "phonetic": "/dɪˈnaɪ/",
     "meaning": "否认"
@@ -10809,7 +11141,8 @@ window.VOCABULARY = [
   {
     "word": "apparently",
     "chunks": [
-      "appar",
+      "ap",
+      "par",
       "ent",
       "ly"
     ],
@@ -10891,7 +11224,8 @@ window.VOCABULARY = [
   {
     "word": "intelligence",
     "chunks": [
-      "intel",
+      "in",
+      "tel",
       "li",
       "gence"
     ],
@@ -11015,7 +11349,8 @@ window.VOCABULARY = [
   {
     "word": "quiet",
     "chunks": [
-      "quiet"
+      "qui",
+      "et"
     ],
     "phonetic": "/kwaɪət/",
     "meaning": "安静"
@@ -11023,7 +11358,9 @@ window.VOCABULARY = [
   {
     "word": "indian",
     "chunks": [
-      "indian"
+      "in",
+      "di",
+      "an"
     ],
     "phonetic": "/ˈɪndiən/",
     "meaning": "印度人"
@@ -11039,7 +11376,8 @@ window.VOCABULARY = [
   {
     "word": "promise",
     "chunks": [
-      "promise"
+      "prom",
+      "ise"
     ],
     "phonetic": "/ˈprɑməs/",
     "meaning": "诺言"
@@ -11047,7 +11385,8 @@ window.VOCABULARY = [
   {
     "word": "aware",
     "chunks": [
-      "aware"
+      "a",
+      "ware"
     ],
     "phonetic": "/əˈwɛr/",
     "meaning": "意识到的"
@@ -11115,7 +11454,8 @@ window.VOCABULARY = [
   {
     "word": "below",
     "chunks": [
-      "below"
+      "be",
+      "low"
     ],
     "phonetic": "/bɪˈloʊ/",
     "meaning": "在下面"
@@ -11131,7 +11471,8 @@ window.VOCABULARY = [
   {
     "word": "voter",
     "chunks": [
-      "voter"
+      "vot",
+      "er"
     ],
     "phonetic": "/ˈvoʊtər/",
     "meaning": "选民"
@@ -11183,7 +11524,8 @@ window.VOCABULARY = [
   {
     "word": "moral",
     "chunks": [
-      "moral"
+      "mor",
+      "al"
     ],
     "phonetic": "/ˈmɔrəl/",
     "meaning": "道德"
@@ -11191,7 +11533,8 @@ window.VOCABULARY = [
   {
     "word": "united",
     "chunks": [
-      "united"
+      "unit",
+      "ed"
     ],
     "phonetic": "/juˈnaɪtɪd/",
     "meaning": "联合的"
@@ -11199,7 +11542,8 @@ window.VOCABULARY = [
   {
     "word": "category",
     "chunks": [
-      "cate",
+      "cat",
+      "e",
       "go",
       "ry"
     ],
@@ -11209,7 +11553,8 @@ window.VOCABULARY = [
   {
     "word": "relatively",
     "chunks": [
-      "rela",
+      "rel",
+      "a",
       "tive",
       "ly"
     ],
@@ -11219,7 +11564,9 @@ window.VOCABULARY = [
   {
     "word": "victory",
     "chunks": [
-      "victory"
+      "vic",
+      "to",
+      "ry"
     ],
     "phonetic": "/ˈvɪktəri/",
     "meaning": "胜利"
@@ -11227,9 +11574,10 @@ window.VOCABULARY = [
   {
     "word": "academic",
     "chunks": [
-      "aca",
-      "de",
-      "mic"
+      "ac",
+      "a",
+      "dem",
+      "ic"
     ],
     "phonetic": "/ˌækəˈdɛmɪk/",
     "meaning": "学术的"
@@ -11247,7 +11595,8 @@ window.VOCABULARY = [
   {
     "word": "healthy",
     "chunks": [
-      "healthy"
+      "heal",
+      "thy"
     ],
     "phonetic": "/ˈhɛlθi/",
     "meaning": "健康的"
@@ -11255,7 +11604,8 @@ window.VOCABULARY = [
   {
     "word": "negative",
     "chunks": [
-      "nega",
+      "neg",
+      "a",
       "tive"
     ],
     "phonetic": "/ˈnɛgətɪv/",
@@ -11276,7 +11626,8 @@ window.VOCABULARY = [
     "chunks": [
       "his",
       "tor",
-      "ical"
+      "i",
+      "cal"
     ],
     "phonetic": "/hɪˈstɔrɪkəl/",
     "meaning": "历史的"
@@ -11284,7 +11635,8 @@ window.VOCABULARY = [
   {
     "word": "medicine",
     "chunks": [
-      "medi",
+      "med",
+      "i",
       "cine"
     ],
     "phonetic": "/ˈmɛdəsən/",
@@ -11310,7 +11662,8 @@ window.VOCABULARY = [
   {
     "word": "finding",
     "chunks": [
-      "finding"
+      "find",
+      "ing"
     ],
     "phonetic": "/ˈfaɪndɪŋ/",
     "meaning": "发现"
@@ -11353,7 +11706,8 @@ window.VOCABULARY = [
   {
     "word": "justice",
     "chunks": [
-      "justice"
+      "jus",
+      "tice"
     ],
     "phonetic": "/ˈdʒəstɪs/",
     "meaning": "正义"
@@ -11372,7 +11726,8 @@ window.VOCABULARY = [
     "word": "participate",
     "chunks": [
       "par",
-      "tici",
+      "tic",
+      "i",
       "pate"
     ],
     "phonetic": "/pɑrˈtɪsəˌpeɪt/",
@@ -11381,7 +11736,8 @@ window.VOCABULARY = [
   {
     "word": "daily",
     "chunks": [
-      "daily"
+      "dai",
+      "ly"
     ],
     "phonetic": "/ˈdeɪli/",
     "meaning": "每日的"
@@ -11405,7 +11761,8 @@ window.VOCABULARY = [
   {
     "word": "famous",
     "chunks": [
-      "famous"
+      "fa",
+      "mous"
     ],
     "phonetic": "/ˈfeɪməs/",
     "meaning": "著名的"
@@ -11431,7 +11788,8 @@ window.VOCABULARY = [
   {
     "word": "flower",
     "chunks": [
-      "flower"
+      "flow",
+      "er"
     ],
     "phonetic": "/flaʊər/",
     "meaning": "花"
@@ -11447,7 +11805,8 @@ window.VOCABULARY = [
   {
     "word": "hire",
     "chunks": [
-      "hire"
+      "hi",
+      "re"
     ],
     "phonetic": "/haɪər/",
     "meaning": "租金"
@@ -11465,7 +11824,8 @@ window.VOCABULARY = [
   {
     "word": "appropriate",
     "chunks": [
-      "appro",
+      "ap",
+      "pro",
       "pri",
       "ate"
     ],
@@ -11475,7 +11835,8 @@ window.VOCABULARY = [
   {
     "word": "supply",
     "chunks": [
-      "supply"
+      "sup",
+      "ply"
     ],
     "phonetic": "/səˈplaɪ/",
     "meaning": "补给"
@@ -11483,7 +11844,8 @@ window.VOCABULARY = [
   {
     "word": "fully",
     "chunks": [
-      "fully"
+      "ful",
+      "ly"
     ],
     "phonetic": "/ˈfʊli/",
     "meaning": "十分地"
@@ -11491,7 +11853,8 @@ window.VOCABULARY = [
   {
     "word": "actor",
     "chunks": [
-      "actor"
+      "ac",
+      "tor"
     ],
     "phonetic": "/ˈæktər/",
     "meaning": "男演员"
@@ -11523,8 +11886,9 @@ window.VOCABULARY = [
   {
     "word": "democracy",
     "chunks": [
-      "demo",
-      "cra",
+      "de",
+      "moc",
+      "ra",
       "cy"
     ],
     "phonetic": "/dɪˈmɑkrəsi/",
@@ -11533,7 +11897,8 @@ window.VOCABULARY = [
   {
     "word": "eastern",
     "chunks": [
-      "eastern"
+      "east",
+      "ern"
     ],
     "phonetic": "/ˈistərn/",
     "meaning": "东方人"
@@ -11541,7 +11906,9 @@ window.VOCABULARY = [
   {
     "word": "primary",
     "chunks": [
-      "primary"
+      "pri",
+      "ma",
+      "ry"
     ],
     "phonetic": "/ˈpraɪˌmɛri/",
     "meaning": "最主要者"
@@ -11559,7 +11926,8 @@ window.VOCABULARY = [
   {
     "word": "circle",
     "chunks": [
-      "circle"
+      "cir",
+      "cle"
     ],
     "phonetic": "/ˈsərkəl/",
     "meaning": "圆周"
@@ -11567,7 +11935,8 @@ window.VOCABULARY = [
   {
     "word": "device",
     "chunks": [
-      "device"
+      "de",
+      "vice"
     ],
     "phonetic": "/dɪˈvaɪs/",
     "meaning": "装置"
@@ -11584,7 +11953,8 @@ window.VOCABULARY = [
   {
     "word": "bottom",
     "chunks": [
-      "bottom"
+      "bot",
+      "tom"
     ],
     "phonetic": "/ˈbɑtəm/",
     "meaning": "底部"
@@ -11592,7 +11962,8 @@ window.VOCABULARY = [
   {
     "word": "island",
     "chunks": [
-      "island"
+      "is",
+      "land"
     ],
     "phonetic": "/ˈaɪlənd/",
     "meaning": "岛"
@@ -11617,7 +11988,8 @@ window.VOCABULARY = [
   {
     "word": "studio",
     "chunks": [
-      "studio"
+      "stu",
+      "dio"
     ],
     "phonetic": "/ˈstudiˌoʊ/",
     "meaning": "工作室"
@@ -11625,7 +11997,8 @@ window.VOCABULARY = [
   {
     "word": "county",
     "chunks": [
-      "county"
+      "coun",
+      "ty"
     ],
     "phonetic": "/ˈkaʊnti/",
     "meaning": "县"
@@ -11641,7 +12014,8 @@ window.VOCABULARY = [
   {
     "word": "lady",
     "chunks": [
-      "lady"
+      "la",
+      "dy"
     ],
     "phonetic": "/ˈleɪdi/",
     "meaning": "淑女"
@@ -11658,7 +12032,8 @@ window.VOCABULARY = [
   {
     "word": "application",
     "chunks": [
-      "appli",
+      "ap",
+      "pli",
       "ca",
       "tion"
     ],
@@ -11684,7 +12059,8 @@ window.VOCABULARY = [
   {
     "word": "damage",
     "chunks": [
-      "damage"
+      "dam",
+      "age"
     ],
     "phonetic": "/ˈdæmɪdʒ/",
     "meaning": "损害"
@@ -11752,7 +12128,8 @@ window.VOCABULARY = [
   {
     "word": "alive",
     "chunks": [
-      "alive"
+      "a",
+      "live"
     ],
     "phonetic": "/əˈlaɪv/",
     "meaning": "活着的"
@@ -11779,7 +12156,8 @@ window.VOCABULARY = [
   {
     "word": "theater",
     "chunks": [
-      "theater"
+      "the",
+      "ater"
     ],
     "phonetic": "/ˈθieɪtər/",
     "meaning": "戏院"
@@ -11796,7 +12174,8 @@ window.VOCABULARY = [
   {
     "word": "chicken",
     "chunks": [
-      "chicken"
+      "chick",
+      "en"
     ],
     "phonetic": "/ˈʧɪkən/",
     "meaning": "小鸡"
@@ -11804,7 +12183,8 @@ window.VOCABULARY = [
   {
     "word": "army",
     "chunks": [
-      "army"
+      "ar",
+      "my"
     ],
     "phonetic": "/ˈɑrmi/",
     "meaning": "军队"
@@ -11812,7 +12192,8 @@ window.VOCABULARY = [
   {
     "word": "abuse",
     "chunks": [
-      "abuse"
+      "ab",
+      "use"
     ],
     "phonetic": "/əˈbjuz/",
     "meaning": "滥用"
@@ -11836,7 +12217,8 @@ window.VOCABULARY = [
   {
     "word": "extra",
     "chunks": [
-      "extra"
+      "ex",
+      "tra"
     ],
     "phonetic": "/ˈɛkstrə/",
     "meaning": "额外的事物"
@@ -11844,7 +12226,8 @@ window.VOCABULARY = [
   {
     "word": "session",
     "chunks": [
-      "session"
+      "ses",
+      "sion"
     ],
     "phonetic": "/ˈsɛʃən/",
     "meaning": "期间"
@@ -11861,7 +12244,8 @@ window.VOCABULARY = [
   {
     "word": "danger",
     "chunks": [
-      "danger"
+      "dan",
+      "ger"
     ],
     "phonetic": "/ˈdeɪndʒər/",
     "meaning": "危险"
@@ -11896,7 +12280,8 @@ window.VOCABULARY = [
     "word": "literature",
     "chunks": [
       "lit",
-      "era",
+      "er",
+      "a",
       "ture"
     ],
     "phonetic": "/ˈlɪtərəʧər/",
@@ -11932,7 +12317,8 @@ window.VOCABULARY = [
   {
     "word": "injury",
     "chunks": [
-      "injury"
+      "in",
+      "jury"
     ],
     "phonetic": "/ˈɪndʒəri/",
     "meaning": "伤害"
@@ -11974,7 +12360,8 @@ window.VOCABULARY = [
   {
     "word": "fuel",
     "chunks": [
-      "fuel"
+      "fu",
+      "el"
     ],
     "phonetic": "/fjuəl/",
     "meaning": "燃料"
@@ -11998,7 +12385,8 @@ window.VOCABULARY = [
   {
     "word": "russian",
     "chunks": [
-      "russian"
+      "rus",
+      "sian"
     ],
     "phonetic": "/ˈrəʃən/",
     "meaning": "俄国人"
@@ -12040,7 +12428,8 @@ window.VOCABULARY = [
   {
     "word": "engine",
     "chunks": [
-      "engine"
+      "en",
+      "gine"
     ],
     "phonetic": "/ˈɪndʒən/",
     "meaning": "引擎"
@@ -12083,7 +12472,8 @@ window.VOCABULARY = [
   {
     "word": "metal",
     "chunks": [
-      "metal"
+      "met",
+      "al"
     ],
     "phonetic": "/ˈmɛtəl/",
     "meaning": "金属"
@@ -12099,7 +12489,8 @@ window.VOCABULARY = [
   {
     "word": "ticket",
     "chunks": [
-      "ticket"
+      "tick",
+      "et"
     ],
     "phonetic": "/ˈtɪkɪt/",
     "meaning": "票"
@@ -12161,7 +12552,8 @@ window.VOCABULARY = [
   {
     "word": "urban",
     "chunks": [
-      "urban"
+      "ur",
+      "ban"
     ],
     "phonetic": "/ˈərbən/",
     "meaning": "城市的"
@@ -12169,7 +12561,8 @@ window.VOCABULARY = [
   {
     "word": "mental",
     "chunks": [
-      "mental"
+      "men",
+      "tal"
     ],
     "phonetic": "/ˈmɛntəl/",
     "meaning": "精神的"
@@ -12177,7 +12570,8 @@ window.VOCABULARY = [
   {
     "word": "increasingly",
     "chunks": [
-      "increas",
+      "in",
+      "creas",
       "ing",
       "ly"
     ],
@@ -12195,7 +12589,9 @@ window.VOCABULARY = [
   {
     "word": "educational",
     "chunks": [
-      "educa",
+      "ed",
+      "u",
+      "ca",
       "tion",
       "al"
     ],
@@ -12214,7 +12610,8 @@ window.VOCABULARY = [
   {
     "word": "farmer",
     "chunks": [
-      "farmer"
+      "farm",
+      "er"
     ],
     "phonetic": "/ˈfɑrmər/",
     "meaning": "农夫"
@@ -12222,7 +12619,8 @@ window.VOCABULARY = [
   {
     "word": "sugar",
     "chunks": [
-      "sugar"
+      "sug",
+      "ar"
     ],
     "phonetic": "/ˈʃʊgər/",
     "meaning": "糖"
@@ -12230,7 +12628,8 @@ window.VOCABULARY = [
   {
     "word": "planet",
     "chunks": [
-      "planet"
+      "plan",
+      "et"
     ],
     "phonetic": "/ˈplænət/",
     "meaning": "行星"
@@ -12266,7 +12665,9 @@ window.VOCABULARY = [
   {
     "word": "enemy",
     "chunks": [
-      "enemy"
+      "en",
+      "e",
+      "my"
     ],
     "phonetic": "/ˈɛnəmi/",
     "meaning": "敌人"
@@ -12283,7 +12684,8 @@ window.VOCABULARY = [
   {
     "word": "complex",
     "chunks": [
-      "complex"
+      "com",
+      "plex"
     ],
     "phonetic": "/ˈkɑmplɛks/",
     "meaning": "综合体"
@@ -12300,7 +12702,8 @@ window.VOCABULARY = [
   {
     "word": "athlete",
     "chunks": [
-      "athlete"
+      "ath",
+      "lete"
     ],
     "phonetic": "/ˈæθˌlit/",
     "meaning": "运动员"
@@ -12344,9 +12747,10 @@ window.VOCABULARY = [
   {
     "word": "scientific",
     "chunks": [
-      "scien",
-      "ti",
-      "fic"
+      "sci",
+      "en",
+      "tif",
+      "ic"
     ],
     "phonetic": "/ˌsaɪənˈtɪfɪk/",
     "meaning": "科学的"
@@ -12354,7 +12758,8 @@ window.VOCABULARY = [
   {
     "word": "impossible",
     "chunks": [
-      "impos",
+      "im",
+      "pos",
       "si",
       "ble"
     ],
@@ -12364,7 +12769,8 @@ window.VOCABULARY = [
   {
     "word": "panel",
     "chunks": [
-      "panel"
+      "pan",
+      "el"
     ],
     "phonetic": "/ˈpænəl/",
     "meaning": "嵌板"
@@ -12389,7 +12795,8 @@ window.VOCABULARY = [
   {
     "word": "married",
     "chunks": [
-      "married"
+      "mar",
+      "ried"
     ],
     "phonetic": "/ˈmɛrid/",
     "meaning": "已婚的"
@@ -12416,7 +12823,8 @@ window.VOCABULARY = [
   {
     "word": "weather",
     "chunks": [
-      "weather"
+      "weath",
+      "er"
     ],
     "phonetic": "/ˈwɛðər/",
     "meaning": "天气"
@@ -12424,7 +12832,8 @@ window.VOCABULARY = [
   {
     "word": "presidential",
     "chunks": [
-      "presi",
+      "pres",
+      "i",
       "den",
       "tial"
     ],
@@ -12454,7 +12863,8 @@ window.VOCABULARY = [
   {
     "word": "supreme",
     "chunks": [
-      "supreme"
+      "su",
+      "preme"
     ],
     "phonetic": "/səˈprim/",
     "meaning": "至高"
@@ -12470,7 +12880,8 @@ window.VOCABULARY = [
   {
     "word": "pocket",
     "chunks": [
-      "pocket"
+      "pock",
+      "et"
     ],
     "phonetic": "/ˈpɑkət/",
     "meaning": "口袋"
@@ -12487,7 +12898,8 @@ window.VOCABULARY = [
     "word": "temperature",
     "chunks": [
       "tem",
-      "pera",
+      "per",
+      "a",
       "ture"
     ],
     "phonetic": "/ˈtɛmpərəʧər/",
@@ -12549,7 +12961,8 @@ window.VOCABULARY = [
   {
     "word": "balance",
     "chunks": [
-      "balance"
+      "bal",
+      "ance"
     ],
     "phonetic": "/ˈbæləns/",
     "meaning": "平衡"
@@ -12557,7 +12970,8 @@ window.VOCABULARY = [
   {
     "word": "adopt",
     "chunks": [
-      "adopt"
+      "ad",
+      "opt"
     ],
     "phonetic": "/əˈdɑpt/",
     "meaning": "采用"
@@ -12567,7 +12981,8 @@ window.VOCABULARY = [
     "chunks": [
       "mi",
       "nor",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/məˈnɔrəti/",
     "meaning": "少数"
@@ -12627,7 +13042,8 @@ window.VOCABULARY = [
   {
     "word": "okay",
     "chunks": [
-      "okay"
+      "o",
+      "kay"
     ],
     "phonetic": "/ˌoʊˈkeɪ/",
     "meaning": "好的"
@@ -12645,7 +13061,8 @@ window.VOCABULARY = [
   {
     "word": "empty",
     "chunks": [
-      "empty"
+      "emp",
+      "ty"
     ],
     "phonetic": "/ˈɛmti/",
     "meaning": "空的"
@@ -12671,7 +13088,8 @@ window.VOCABULARY = [
   {
     "word": "novel",
     "chunks": [
-      "novel"
+      "nov",
+      "el"
     ],
     "phonetic": "/ˈnɑvəl/",
     "meaning": "小说"
@@ -12696,7 +13114,8 @@ window.VOCABULARY = [
   {
     "word": "jury",
     "chunks": [
-      "jury"
+      "ju",
+      "ry"
     ],
     "phonetic": "/ˈdʒʊri/",
     "meaning": "陪审团"
@@ -12704,7 +13123,8 @@ window.VOCABULARY = [
   {
     "word": "iraqi",
     "chunks": [
-      "iraqi"
+      "ir",
+      "aqi"
     ],
     "phonetic": "/ˌɪˈræki/",
     "meaning": "伊拉克人"
@@ -12746,7 +13166,8 @@ window.VOCABULARY = [
   {
     "word": "union",
     "chunks": [
-      "union"
+      "uni",
+      "on"
     ],
     "phonetic": "/ˈjunjən/",
     "meaning": "联盟"
@@ -12780,7 +13201,8 @@ window.VOCABULARY = [
   {
     "word": "yellow",
     "chunks": [
-      "yellow"
+      "yel",
+      "low"
     ],
     "phonetic": "/ˈjɛloʊ/",
     "meaning": "黄色的"
@@ -12806,7 +13228,8 @@ window.VOCABULARY = [
   {
     "word": "shadow",
     "chunks": [
-      "shadow"
+      "shad",
+      "ow"
     ],
     "phonetic": "/ˈʃæˌdoʊ/",
     "meaning": "阴影"
@@ -12872,7 +13295,8 @@ window.VOCABULARY = [
   {
     "word": "analyst",
     "chunks": [
-      "ana",
+      "an",
+      "a",
       "lyst"
     ],
     "phonetic": "/ˈænəlɪst/",
@@ -12881,7 +13305,8 @@ window.VOCABULARY = [
   {
     "word": "regulation",
     "chunks": [
-      "regu",
+      "reg",
+      "u",
       "la",
       "tion"
     ],
@@ -12891,7 +13316,8 @@ window.VOCABULARY = [
   {
     "word": "being",
     "chunks": [
-      "being"
+      "be",
+      "ing"
     ],
     "phonetic": "/biɪŋ/",
     "meaning": "存在"
@@ -12925,7 +13351,8 @@ window.VOCABULARY = [
     "word": "revenue",
     "chunks": [
       "rev",
-      "enue"
+      "en",
+      "ue"
     ],
     "phonetic": "/ˈrɛvəˌnu/",
     "meaning": "收入"
@@ -12969,7 +13396,8 @@ window.VOCABULARY = [
   {
     "word": "difficulty",
     "chunks": [
-      "diffi",
+      "dif",
+      "fi",
       "cul",
       "ty"
     ],
@@ -12987,8 +13415,8 @@ window.VOCABULARY = [
   {
     "word": "recommend",
     "chunks": [
-      "rec",
-      "om",
+      "re",
+      "com",
       "mend"
     ],
     "phonetic": "/ˌrɛkəˈmɛnd/",
@@ -13007,9 +13435,9 @@ window.VOCABULARY = [
   {
     "word": "basically",
     "chunks": [
-      "basi",
-      "cal",
-      "ly"
+      "ba",
+      "sic",
+      "ally"
     ],
     "phonetic": "/ˈbeɪsɪkli/",
     "meaning": "基本上"
@@ -13055,8 +13483,8 @@ window.VOCABULARY = [
     "word": "possibly",
     "chunks": [
       "pos",
-      "sib",
-      "ly"
+      "si",
+      "bly"
     ],
     "phonetic": "/ˈpɑsəbli/",
     "meaning": "可能"
@@ -13072,7 +13500,8 @@ window.VOCABULARY = [
   {
     "word": "visitor",
     "chunks": [
-      "visi",
+      "vis",
+      "i",
       "tor"
     ],
     "phonetic": "/ˈvɪzɪtər/",
@@ -13127,7 +13556,8 @@ window.VOCABULARY = [
   {
     "word": "angry",
     "chunks": [
-      "angry"
+      "an",
+      "gry"
     ],
     "phonetic": "/ˈæŋgri/",
     "meaning": "生气的"
@@ -13233,7 +13663,8 @@ window.VOCABULARY = [
   {
     "word": "truly",
     "chunks": [
-      "truly"
+      "tru",
+      "ly"
     ],
     "phonetic": "/ˈtruli/",
     "meaning": "真实地"
@@ -13286,7 +13717,8 @@ window.VOCABULARY = [
   {
     "word": "unique",
     "chunks": [
-      "unique"
+      "u",
+      "nique"
     ],
     "phonetic": "/juˈnik/",
     "meaning": "独一无二的"
@@ -13372,7 +13804,8 @@ window.VOCABULARY = [
   {
     "word": "appreciate",
     "chunks": [
-      "appre",
+      "ap",
+      "pre",
       "ci",
       "ate"
     ],
@@ -13469,7 +13902,8 @@ window.VOCABULARY = [
   {
     "word": "duty",
     "chunks": [
-      "duty"
+      "du",
+      "ty"
     ],
     "phonetic": "/ˈduti/",
     "meaning": "责任"
@@ -13512,8 +13946,8 @@ window.VOCABULARY = [
   {
     "word": "catholic",
     "chunks": [
-      "ca",
-      "tho",
+      "cath",
+      "o",
       "lic"
     ],
     "phonetic": "/ˈkæθlɪk/",
@@ -13616,7 +14050,8 @@ window.VOCABULARY = [
   {
     "word": "pilot",
     "chunks": [
-      "pilot"
+      "pi",
+      "lot"
     ],
     "phonetic": "/ˈpaɪlət/",
     "meaning": "飞行员"
@@ -13632,7 +14067,8 @@ window.VOCABULARY = [
   {
     "word": "ultimately",
     "chunks": [
-      "ulti",
+      "ul",
+      "ti",
       "mate",
       "ly"
     ],
@@ -13650,7 +14086,8 @@ window.VOCABULARY = [
   {
     "word": "contribution",
     "chunks": [
-      "contri",
+      "con",
+      "tri",
       "bu",
       "tion"
     ],
@@ -13662,7 +14099,8 @@ window.VOCABULARY = [
     "chunks": [
       "ca",
       "pac",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/kəˈpæsɪti/",
     "meaning": "容量"
@@ -13714,7 +14152,8 @@ window.VOCABULARY = [
   {
     "word": "politician",
     "chunks": [
-      "poli",
+      "po",
+      "li",
       "ti",
       "cian"
     ],
@@ -13767,7 +14206,8 @@ window.VOCABULARY = [
   {
     "word": "funny",
     "chunks": [
-      "funny"
+      "fun",
+      "ny"
     ],
     "phonetic": "/ˈfəni/",
     "meaning": "好笑的"
@@ -13792,7 +14232,8 @@ window.VOCABULARY = [
   {
     "word": "surgery",
     "chunks": [
-      "surgery"
+      "sur",
+      "gery"
     ],
     "phonetic": "/ˈsərdʒəri/",
     "meaning": "外科"
@@ -13886,7 +14327,8 @@ window.VOCABULARY = [
   {
     "word": "investigate",
     "chunks": [
-      "inves",
+      "in",
+      "ves",
       "ti",
       "gate"
     ],
@@ -13896,7 +14338,8 @@ window.VOCABULARY = [
   {
     "word": "crazy",
     "chunks": [
-      "crazy"
+      "cra",
+      "zy"
     ],
     "phonetic": "/ˈkreɪzi/",
     "meaning": "发狂的"
@@ -13904,7 +14347,9 @@ window.VOCABULARY = [
   {
     "word": "significantly",
     "chunks": [
-      "signifi",
+      "sig",
+      "nif",
+      "i",
       "cant",
       "ly"
     ],
@@ -13930,7 +14375,8 @@ window.VOCABULARY = [
   {
     "word": "combination",
     "chunks": [
-      "combi",
+      "com",
+      "bi",
       "na",
       "tion"
     ],
@@ -13969,7 +14415,8 @@ window.VOCABULARY = [
   {
     "word": "user",
     "chunks": [
-      "user"
+      "us",
+      "er"
     ],
     "phonetic": "/ˈjuzər/",
     "meaning": "使用者"
@@ -14106,7 +14553,8 @@ window.VOCABULARY = [
   {
     "word": "equal",
     "chunks": [
-      "equal"
+      "e",
+      "qual"
     ],
     "phonetic": "/ˈikwəl/",
     "meaning": "对手"
@@ -14131,7 +14579,8 @@ window.VOCABULARY = [
     "word": "typical",
     "chunks": [
       "typ",
-      "ical"
+      "i",
+      "cal"
     ],
     "phonetic": "/ˈtɪpɪkəl/",
     "meaning": "典型的"
@@ -14148,7 +14597,8 @@ window.VOCABULARY = [
   {
     "word": "conservative",
     "chunks": [
-      "conser",
+      "con",
+      "ser",
       "va",
       "tive"
     ],
@@ -14158,7 +14608,8 @@ window.VOCABULARY = [
   {
     "word": "eliminate",
     "chunks": [
-      "elimi",
+      "elim",
+      "i",
       "nate"
     ],
     "phonetic": "/ɪˈlɪməˌneɪt/",
@@ -14191,7 +14642,8 @@ window.VOCABULARY = [
   {
     "word": "ocean",
     "chunks": [
-      "ocean"
+      "o",
+      "cean"
     ],
     "phonetic": "/ˈoʊʃən/",
     "meaning": "海洋"
@@ -14235,7 +14687,8 @@ window.VOCABULARY = [
   {
     "word": "regime",
     "chunks": [
-      "regime"
+      "re",
+      "gime"
     ],
     "phonetic": "/rəˈʒim/",
     "meaning": "政权"
@@ -14312,7 +14765,8 @@ window.VOCABULARY = [
   {
     "word": "rely",
     "chunks": [
-      "rely"
+      "re",
+      "ly"
     ],
     "phonetic": "/rɪˈlaɪ/",
     "meaning": "信赖"
@@ -14330,9 +14784,11 @@ window.VOCABULARY = [
   {
     "word": "association",
     "chunks": [
-      "asso",
+      "as",
+      "so",
       "ci",
-      "ation"
+      "a",
+      "tion"
     ],
     "phonetic": "/əˌsoʊʃiˈeɪʃən/",
     "meaning": "协会"
@@ -14349,7 +14805,8 @@ window.VOCABULARY = [
   {
     "word": "topic",
     "chunks": [
-      "topic"
+      "top",
+      "ic"
     ],
     "phonetic": "/ˈtɑpɪk/",
     "meaning": "主题"
@@ -14454,7 +14911,8 @@ window.VOCABULARY = [
   {
     "word": "opposition",
     "chunks": [
-      "oppo",
+      "op",
+      "po",
       "si",
       "tion"
     ],
@@ -14474,7 +14932,8 @@ window.VOCABULARY = [
   {
     "word": "aside",
     "chunks": [
-      "aside"
+      "a",
+      "side"
     ],
     "phonetic": "/əˈsaɪd/",
     "meaning": "小声说的话"
@@ -14551,7 +15010,8 @@ window.VOCABULARY = [
   {
     "word": "expectation",
     "chunks": [
-      "expec",
+      "ex",
+      "pec",
       "ta",
       "tion"
     ],
@@ -14561,7 +15021,8 @@ window.VOCABULARY = [
   {
     "word": "separate",
     "chunks": [
-      "sepa",
+      "sep",
+      "a",
       "rate"
     ],
     "phonetic": "/ˈsɛpərˌeɪt/",
@@ -14646,7 +15107,8 @@ window.VOCABULARY = [
   {
     "word": "seriously",
     "chunks": [
-      "seri",
+      "se",
+      "ri",
       "ous",
       "ly"
     ],
@@ -14676,7 +15138,8 @@ window.VOCABULARY = [
   {
     "word": "hero",
     "chunks": [
-      "hero"
+      "he",
+      "ro"
     ],
     "phonetic": "/ˈhɪroʊ/",
     "meaning": "英雄"
@@ -14684,7 +15147,8 @@ window.VOCABULARY = [
   {
     "word": "industrial",
     "chunks": [
-      "indus",
+      "in",
+      "dus",
       "tri",
       "al"
     ],
@@ -14763,7 +15227,8 @@ window.VOCABULARY = [
   {
     "word": "busy",
     "chunks": [
-      "busy"
+      "bu",
+      "sy"
     ],
     "phonetic": "/ˈbɪzi/",
     "meaning": "忙碌的"
@@ -14771,7 +15236,8 @@ window.VOCABULARY = [
   {
     "word": "intervention",
     "chunks": [
-      "inter",
+      "in",
+      "ter",
       "ven",
       "tion"
     ],
@@ -14781,7 +15247,8 @@ window.VOCABULARY = [
   {
     "word": "copy",
     "chunks": [
-      "copy"
+      "co",
+      "py"
     ],
     "phonetic": "/ˈkɑpi/",
     "meaning": "副本"
@@ -14830,8 +15297,9 @@ window.VOCABULARY = [
   {
     "word": "vegetable",
     "chunks": [
-      "veg",
-      "etable"
+      "ve",
+      "get",
+      "able"
     ],
     "phonetic": "/ˈvɛdʒtəbəl/",
     "meaning": "蔬菜"
@@ -14946,7 +15414,8 @@ window.VOCABULARY = [
   {
     "word": "contemporary",
     "chunks": [
-      "contem",
+      "con",
+      "tem",
       "po",
       "rary"
     ],
@@ -15001,7 +15470,8 @@ window.VOCABULARY = [
   {
     "word": "criminal",
     "chunks": [
-      "crimi",
+      "crim",
+      "i",
       "nal"
     ],
     "phonetic": "/ˈkrɪmənəl/",
@@ -15018,7 +15488,8 @@ window.VOCABULARY = [
   {
     "word": "upper",
     "chunks": [
-      "upper"
+      "up",
+      "per"
     ],
     "phonetic": "/ˈəpər/",
     "meaning": "上面的"
@@ -15034,8 +15505,10 @@ window.VOCABULARY = [
   {
     "word": "necessarily",
     "chunks": [
-      "neces",
-      "sari",
+      "nec",
+      "es",
+      "sar",
+      "i",
       "ly"
     ],
     "phonetic": "/ˌnɛsəˈsɛrəli/",
@@ -15045,7 +15518,8 @@ window.VOCABULARY = [
     "word": "specifically",
     "chunks": [
       "specif",
-      "ical",
+      "i",
+      "cal",
       "ly"
     ],
     "phonetic": "/spəˈsɪfɪkli/",
@@ -15054,7 +15528,8 @@ window.VOCABULARY = [
   {
     "word": "tired",
     "chunks": [
-      "tired"
+      "ti",
+      "red"
     ],
     "phonetic": "/taɪərd/",
     "meaning": "疲累的"
@@ -15071,7 +15546,8 @@ window.VOCABULARY = [
   {
     "word": "holiday",
     "chunks": [
-      "holi",
+      "hol",
+      "i",
       "day"
     ],
     "phonetic": "/ˈhɑlɪˌdeɪ/",
@@ -15088,7 +15564,8 @@ window.VOCABULARY = [
   {
     "word": "fewer",
     "chunks": [
-      "fewer"
+      "few",
+      "er"
     ],
     "phonetic": "/fjuər/",
     "meaning": "较少的"
@@ -15105,7 +15582,8 @@ window.VOCABULARY = [
   {
     "word": "resolution",
     "chunks": [
-      "reso",
+      "res",
+      "o",
       "lu",
       "tion"
     ],
@@ -15133,7 +15611,8 @@ window.VOCABULARY = [
   {
     "word": "apart",
     "chunks": [
-      "apart"
+      "a",
+      "part"
     ],
     "phonetic": "/əˈpɑrt/",
     "meaning": "成零碎"
@@ -15177,8 +15656,10 @@ window.VOCABULARY = [
   {
     "word": "representative",
     "chunks": [
-      "repre",
-      "senta",
+      "rep",
+      "re",
+      "sen",
+      "ta",
       "tive"
     ],
     "phonetic": "/ˌrɛprɪˈzɛnətɪv/",
@@ -15287,7 +15768,8 @@ window.VOCABULARY = [
     "chunks": [
       "ex",
       "per",
-      "iment"
+      "i",
+      "ment"
     ],
     "phonetic": "/ɪkˈspɛrəmənt/",
     "meaning": "实验"
@@ -15295,7 +15777,8 @@ window.VOCABULARY = [
   {
     "word": "definitely",
     "chunks": [
-      "defi",
+      "def",
+      "i",
       "nite",
       "ly"
     ],
@@ -15385,7 +15868,8 @@ window.VOCABULARY = [
   {
     "word": "cable",
     "chunks": [
-      "cable"
+      "ca",
+      "ble"
     ],
     "phonetic": "/ˈkeɪbəl/",
     "meaning": "电缆"
@@ -15411,7 +15895,8 @@ window.VOCABULARY = [
   {
     "word": "rural",
     "chunks": [
-      "rural"
+      "ru",
+      "ral"
     ],
     "phonetic": "/ˈrʊrəl/",
     "meaning": "乡下的"
@@ -15454,7 +15939,8 @@ window.VOCABULARY = [
   {
     "word": "solid",
     "chunks": [
-      "solid"
+      "sol",
+      "id"
     ],
     "phonetic": "/ˈsɑləd/",
     "meaning": "固体"
@@ -15471,7 +15957,8 @@ window.VOCABULARY = [
     "word": "typically",
     "chunks": [
       "typ",
-      "ical",
+      "i",
+      "cal",
       "ly"
     ],
     "phonetic": "/ˈtɪpɪkəli/",
@@ -15496,8 +15983,10 @@ window.VOCABULARY = [
   {
     "word": "unfortunately",
     "chunks": [
-      "unfor",
-      "tunate",
+      "un",
+      "for",
+      "tu",
+      "nate",
       "ly"
     ],
     "phonetic": "/ənˈfɔrʧənətli/",
@@ -15506,7 +15995,8 @@ window.VOCABULARY = [
   {
     "word": "legislation",
     "chunks": [
-      "legis",
+      "leg",
+      "is",
       "la",
       "tion"
     ],
@@ -15525,7 +16015,8 @@ window.VOCABULARY = [
   {
     "word": "celebrate",
     "chunks": [
-      "cele",
+      "cel",
+      "e",
       "brate"
     ],
     "phonetic": "/ˈsɛləˌbreɪt/",
@@ -15596,8 +16087,10 @@ window.VOCABULARY = [
   {
     "word": "characteristic",
     "chunks": [
-      "charac",
-      "teris",
+      "char",
+      "ac",
+      "ter",
+      "is",
       "tic"
     ],
     "phonetic": "/ˌkɛrɪktərˈɪstɪk/",
@@ -15676,7 +16169,8 @@ window.VOCABULARY = [
   {
     "word": "physician",
     "chunks": [
-      "physi",
+      "phys",
+      "i",
       "cian"
     ],
     "phonetic": "/fəˈzɪʃən/",
@@ -15703,7 +16197,8 @@ window.VOCABULARY = [
   {
     "word": "virtually",
     "chunks": [
-      "virtu",
+      "vir",
+      "tu",
       "al",
       "ly"
     ],
@@ -15732,7 +16227,8 @@ window.VOCABULARY = [
     "word": "creative",
     "chunks": [
       "cre",
-      "ative"
+      "at",
+      "ive"
     ],
     "phonetic": "/kriˈeɪtɪv/",
     "meaning": "有创造力的"
@@ -15740,7 +16236,8 @@ window.VOCABULARY = [
   {
     "word": "lower",
     "chunks": [
-      "lower"
+      "low",
+      "er"
     ],
     "phonetic": "/loʊər/",
     "meaning": "低的"
@@ -15757,7 +16254,8 @@ window.VOCABULARY = [
   {
     "word": "explanation",
     "chunks": [
-      "expla",
+      "ex",
+      "pla",
       "na",
       "tion"
     ],
@@ -15775,7 +16273,8 @@ window.VOCABULARY = [
   {
     "word": "honor",
     "chunks": [
-      "honor"
+      "hon",
+      "or"
     ],
     "phonetic": "/ˈɑnər/",
     "meaning": "荣誉"
@@ -15801,7 +16300,8 @@ window.VOCABULARY = [
   {
     "word": "guilty",
     "chunks": [
-      "guilty"
+      "guil",
+      "ty"
     ],
     "phonetic": "/ˈgɪlti/",
     "meaning": "犯罪的"
@@ -15881,7 +16381,8 @@ window.VOCABULARY = [
   {
     "word": "alternative",
     "chunks": [
-      "alter",
+      "al",
+      "ter",
       "na",
       "tive"
     ],
@@ -15900,7 +16401,8 @@ window.VOCABULARY = [
   {
     "word": "interaction",
     "chunks": [
-      "inter",
+      "in",
+      "ter",
       "ac",
       "tion"
     ],
@@ -15910,9 +16412,11 @@ window.VOCABULARY = [
   {
     "word": "personality",
     "chunks": [
-      "person",
+      "per",
+      "son",
       "al",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/ˌpərsəˈnælɪti/",
     "meaning": "个性"
@@ -16037,7 +16541,8 @@ window.VOCABULARY = [
   {
     "word": "criticism",
     "chunks": [
-      "criti",
+      "crit",
+      "i",
       "cism"
     ],
     "phonetic": "/ˈkrɪtɪˌsɪzəm/",
@@ -16046,7 +16551,8 @@ window.VOCABULARY = [
   {
     "word": "asset",
     "chunks": [
-      "asset"
+      "as",
+      "set"
     ],
     "phonetic": "/ˈæˌsɛt/",
     "meaning": "资产"
@@ -16064,7 +16570,8 @@ window.VOCABULARY = [
   {
     "word": "spiritual",
     "chunks": [
-      "spiri",
+      "spir",
+      "i",
       "tu",
       "al"
     ],
@@ -16146,7 +16653,8 @@ window.VOCABULARY = [
   {
     "word": "observation",
     "chunks": [
-      "obser",
+      "ob",
+      "ser",
       "va",
       "tion"
     ],
@@ -16191,7 +16699,8 @@ window.VOCABULARY = [
   {
     "word": "definition",
     "chunks": [
-      "defi",
+      "def",
+      "i",
       "ni",
       "tion"
     ],
@@ -16201,7 +16710,8 @@ window.VOCABULARY = [
   {
     "word": "cigarette",
     "chunks": [
-      "ciga",
+      "cig",
+      "a",
       "rette"
     ],
     "phonetic": "/ˌsɪgəˈrɛt/",
@@ -16212,7 +16722,8 @@ window.VOCABULARY = [
     "chunks": [
       "pri",
       "or",
-      "ity"
+      "i",
+      "ty"
     ],
     "phonetic": "/praɪˈɔrəti/",
     "meaning": "优先权"
@@ -16237,7 +16748,8 @@ window.VOCABULARY = [
   {
     "word": "graduate",
     "chunks": [
-      "gradu",
+      "grad",
+      "u",
       "ate"
     ],
     "phonetic": "/ˈgrædʒəˌweɪt/",
@@ -16299,7 +16811,8 @@ window.VOCABULARY = [
   {
     "word": "deeply",
     "chunks": [
-      "deeply"
+      "deep",
+      "ly"
     ],
     "phonetic": "/ˈdipli/",
     "meaning": "深刻地"
@@ -16317,7 +16830,8 @@ window.VOCABULARY = [
   {
     "word": "prosecutor",
     "chunks": [
-      "prose",
+      "pros",
+      "e",
       "cu",
       "tor"
     ],
@@ -16327,7 +16841,8 @@ window.VOCABULARY = [
   {
     "word": "lucky",
     "chunks": [
-      "lucky"
+      "luc",
+      "ky"
     ],
     "phonetic": "/ˈləki/",
     "meaning": "幸运的"
@@ -16401,7 +16916,8 @@ window.VOCABULARY = [
     "word": "primarily",
     "chunks": [
       "pri",
-      "mari",
+      "mar",
+      "i",
       "ly"
     ],
     "phonetic": "/praɪˈmɛrəli/",
@@ -16437,8 +16953,9 @@ window.VOCABULARY = [
     "word": "initiative",
     "chunks": [
       "ini",
-      "tia",
-      "tive"
+      "ti",
+      "at",
+      "ive"
     ],
     "phonetic": "/ˌɪˈnɪʃətɪv/",
     "meaning": "主动行动"
@@ -16446,7 +16963,8 @@ window.VOCABULARY = [
   {
     "word": "diet",
     "chunks": [
-      "diet"
+      "di",
+      "et"
     ],
     "phonetic": "/daɪət/",
     "meaning": "日常饮食"
@@ -16473,7 +16991,8 @@ window.VOCABULARY = [
     "word": "therapy",
     "chunks": [
       "ther",
-      "apy"
+      "a",
+      "py"
     ],
     "phonetic": "/ˈθɛrəpi/",
     "meaning": "治疗"
@@ -16604,7 +17123,8 @@ window.VOCABULARY = [
   {
     "word": "violent",
     "chunks": [
-      "vio",
+      "vi",
+      "o",
       "lent"
     ],
     "phonetic": "/ˈvaɪələnt/",
@@ -16621,7 +17141,8 @@ window.VOCABULARY = [
   {
     "word": "silent",
     "chunks": [
-      "silent"
+      "si",
+      "lent"
     ],
     "phonetic": "/ˈsaɪlənt/",
     "meaning": "沉默的"
@@ -16672,7 +17193,8 @@ window.VOCABULARY = [
     "word": "comparison",
     "chunks": [
       "com",
-      "pari",
+      "par",
+      "i",
       "son"
     ],
     "phonetic": "/kəmˈpɛrəsən/",
@@ -16691,7 +17213,8 @@ window.VOCABULARY = [
   {
     "word": "layer",
     "chunks": [
-      "layer"
+      "lay",
+      "er"
     ],
     "phonetic": "/leɪər/",
     "meaning": "层"
@@ -16762,7 +17285,8 @@ window.VOCABULARY = [
   {
     "word": "territory",
     "chunks": [
-      "terri",
+      "ter",
+      "ri",
       "to",
       "ry"
     ],
@@ -16772,7 +17296,8 @@ window.VOCABULARY = [
   {
     "word": "immediate",
     "chunks": [
-      "imme",
+      "im",
+      "me",
       "di",
       "ate"
     ],
@@ -16828,7 +17353,8 @@ window.VOCABULARY = [
   {
     "word": "bother",
     "chunks": [
-      "bother"
+      "both",
+      "er"
     ],
     "phonetic": "/ˈbɑðər/",
     "meaning": "烦扰"
@@ -16881,7 +17407,8 @@ window.VOCABULARY = [
   {
     "word": "desert",
     "chunks": [
-      "desert"
+      "de",
+      "sert"
     ],
     "phonetic": "/ˈdɛzərt/",
     "meaning": "沙漠"
@@ -16897,7 +17424,8 @@ window.VOCABULARY = [
   {
     "word": "error",
     "chunks": [
-      "error"
+      "er",
+      "ror"
     ],
     "phonetic": "/ˈɛrər/",
     "meaning": "错误"
@@ -16913,7 +17441,8 @@ window.VOCABULARY = [
   {
     "word": "arab",
     "chunks": [
-      "arab"
+      "ar",
+      "ab"
     ],
     "phonetic": "/ˈærəb/",
     "meaning": "阿拉伯人"
@@ -17010,7 +17539,9 @@ window.VOCABULARY = [
   {
     "word": "participation",
     "chunks": [
-      "partici",
+      "par",
+      "tic",
+      "i",
       "pa",
       "tion"
     ],
@@ -17020,7 +17551,8 @@ window.VOCABULARY = [
   {
     "word": "album",
     "chunks": [
-      "album"
+      "al",
+      "bum"
     ],
     "phonetic": "/ˈælbəm/",
     "meaning": "粘贴簿"
@@ -17055,7 +17587,8 @@ window.VOCABULARY = [
   {
     "word": "reply",
     "chunks": [
-      "reply"
+      "re",
+      "ply"
     ],
     "phonetic": "/rɪˈplaɪ/",
     "meaning": "答复"
@@ -17063,7 +17596,8 @@ window.VOCABULARY = [
   {
     "word": "cycle",
     "chunks": [
-      "cycle"
+      "cy",
+      "cle"
     ],
     "phonetic": "/ˈsaɪkəl/",
     "meaning": "周期"
@@ -17186,7 +17720,8 @@ window.VOCABULARY = [
   {
     "word": "hello",
     "chunks": [
-      "hello"
+      "hel",
+      "lo"
     ],
     "phonetic": "/hɛˈloʊ/",
     "meaning": "interj. 喂"
@@ -17210,7 +17745,8 @@ window.VOCABULARY = [
   {
     "word": "coalition",
     "chunks": [
-      "coali",
+      "co",
+      "ali",
       "tion"
     ],
     "phonetic": "/ˌkoʊəˈlɪʃən/",
@@ -17228,7 +17764,8 @@ window.VOCABULARY = [
   {
     "word": "racial",
     "chunks": [
-      "racial"
+      "ra",
+      "cial"
     ],
     "phonetic": "/ˈreɪʃəl/",
     "meaning": "人种的"

@@ -18,9 +18,10 @@ VOCABULARY_PATH = ROOT / "vocabulary.js"
 CACHE_DIR = ROOT / ".cache"
 ECDICT_PATH = CACHE_DIR / "ecdict.csv"
 ECDICT_URL = "https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv"
-TARGET_TOTAL = 1500
+TARGET_TOTAL = 2000
 
-hyphenator = pyphen.Pyphen(lang="en_US")
+us_hyphenator = pyphen.Pyphen(lang="en_US")
+gb_hyphenator = pyphen.Pyphen(lang="en_GB")
 
 MEANING_OVERRIDES = {
     "a": "一个；一（不定冠词）",
@@ -188,18 +189,40 @@ PHONETIC_OVERRIDES = {
 }
 
 CHUNK_OVERRIDES = {
-    "anybody": ["any", "body"],
+    "about": ["a", "bout"],
+    "abstain": ["ab", "stain"],
+    "abuse": ["ab", "use"],
+    "afternoon": ["after", "noon"],
+    "again": ["a", "gain"],
+    "alive": ["a", "live"],
+    "around": ["a", "round"],
+    "beautiful": ["beau", "ti", "ful"],
+    "comprise": ["com", "prise"],
+    "computer": ["com", "pu", "ter"],
+    "congratulation": ["con", "gra", "tu", "la", "tion"],
+    "event": ["e", "vent"],
+    "exist": ["exist"],
+    "family": ["fam", "i", "ly"],
+    "fire": ["fire"],
+    "market": ["mar", "ket"],
+    "maybe": ["may", "be"],
+    "mistake": ["mis", "take"],
+    "morning": ["mor", "ning"],
+    "nation": ["na", "tion"],
+    "ocean": ["o", "cean"],
+    "open": ["o", "pen"],
+    "radio": ["ra", "di", "o"],
+    "silver": ["sil", "ver"],
+    "somehow": ["some", "how"],
+    "student": ["stu", "dent"],
+    "video": ["vid", "e", "o"],
+    "aftermath": ["after", "math"],
     "afternoon": ["after", "noon"],
     "anyway": ["any", "way"],
+    "anybody": ["any", "body"],
     "advice": ["ad", "vice"],
     "aspect": ["as", "pect"],
-    "answer": ["answer"],
     "attend": ["at", "tend"],
-    "bother": ["bother"],
-    "brother": ["brother"],
-    "center": ["center"],
-    "common": ["common"],
-    "computer": ["com", "pu", "ter"],
     "active": ["ac", "tive"],
     "because": ["be", "cause"],
     "belong": ["be", "long"],
@@ -225,15 +248,12 @@ CHUNK_OVERRIDES = {
     "express": ["ex", "press"],
     "extend": ["ex", "tend"],
     "people": ["peo", "ple"],
-    "family": ["fa", "mi", "ly"],
     "freedom": ["free", "dom"],
     "income": ["in", "come"],
     "insist": ["in", "sist"],
     "intend": ["in", "tend"],
     "invite": ["in", "vite"],
     "critic": ["cri", "tic"],
-    "mistake": ["mis", "take"],
-    "necessary": ["neces", "sary"],
     "nobody": ["no", "body"],
     "observe": ["ob", "serve"],
     "obtain": ["ob", "tain"],
@@ -247,84 +267,110 @@ CHUNK_OVERRIDES = {
     "replace": ["re", "place"],
     "respect": ["re", "spect"],
     "review": ["re", "view"],
-    "somehow": ["some", "how"],
-    "situation": ["situ", "ation"],
+    "situation": ["sit", "u", "a", "tion"],
     "survive": ["sur", "vive"],
     "unless": ["un", "less"],
     "weekend": ["week", "end"],
     "welcome": ["wel", "come"],
-    "political": ["po", "li", "ti", "cal"],
+    "political": ["po", "lit", "i", "cal"],
     "contribute": ["con", "tri", "bute"],
-    "economic": ["eco", "no", "mic"],
-    "academic": ["aca", "de", "mic"],
-    "democratic": ["demo", "cra", "tic"],
+    "economic": ["eco", "nom", "ic"],
+    "academic": ["ac", "a", "dem", "ic"],
+    "democratic": ["de", "mo", "crat", "ic"],
     "dramatic": ["dra", "ma", "tic"],
-    "specific": ["spe", "ci", "fic"],
-    "scientific": ["sci", "en", "ti", "fic"],
-    "automatic": ["au", "to", "ma", "tic"],
-    "education": ["edu", "ca", "tion"],
-    "evidence": ["evi", "dence"],
-    "medical": ["medi", "cal"],
-    "individual": ["indi", "vid", "ual"],
-    "technology": ["tech", "nol", "ogy"],
-    "operation": ["op", "er", "ation"],
-    "authority": ["au", "thor", "ity"],
-    "executive": ["ex", "ec", "utive"],
-    "popular": ["pop", "ular"],
-    "particular": ["par", "tic", "ular"],
-    "reality": ["re", "al", "ity"],
-    "violence": ["vio", "lence"],
-    "responsibility": ["re", "spon", "si", "bil", "ity"],
+    "specific": ["spe", "cif", "ic"],
+    "scientific": ["sci", "en", "tif", "ic"],
+    "automatic": ["au", "to", "mat", "ic"],
+    "education": ["ed", "u", "ca", "tion"],
+    "evidence": ["ev", "i", "dence"],
+    "medical": ["med", "i", "cal"],
+    "individual": ["in", "di", "vid", "u", "al"],
+    "technology": ["tech", "nol", "o", "gy"],
+    "operation": ["op", "er", "a", "tion"],
+    "authority": ["au", "thor", "i", "ty"],
+    "executive": ["exe", "cu", "tive"],
+    "popular": ["pop", "u", "lar"],
+    "particular": ["par", "tic", "u", "lar"],
+    "reality": ["re", "al", "i", "ty"],
+    "violence": ["vi", "o", "lence"],
+    "responsibility": ["re", "spon", "si", "bil", "i", "ty"],
     "favorite": ["fa", "vo", "rite"],
     "failure": ["fail", "ure"],
-    "matter": ["matter"],
-    "member": ["member"],
-    "memory": ["memory"],
-    "medicine": ["medi", "cine"],
-    "moment": ["moment"],
-    "parent": ["parent"],
+    "memory": ["mem", "o", "ry"],
+    "medicine": ["med", "i", "cine"],
     "politician": ["po", "li", "ti", "cian"],
     "progress": ["pro", "gress"],
+    "probably": ["pro", "ba", "bly"],
     "growing": ["grow", "ing"],
     "living": ["liv", "ing"],
     "meaning": ["mean", "ing"],
-    "mother": ["mother"],
     "reading": ["read", "ing"],
-    "summer": ["summer"],
     "writing": ["writ", "ing"],
-    "catholic": ["ca", "tho", "lic"],
-    "democracy": ["demo", "cra", "cy"],
-    "democrat": ["demo", "crat"],
-    "weather": ["weather"],
+    "catholic": ["cath", "o", "lic"],
+    "democracy": ["de", "moc", "ra", "cy"],
+    "democrat": ["dem", "o", "crat"],
+    "international": ["in", "ter", "na", "tion", "al"],
+    "community": ["com", "mu", "ni", "ty"],
+    "organization": ["or", "ga", "ni", "za", "tion"],
+    "opportunity": ["op", "por", "tu", "ni", "ty"],
+    "administration": ["ad", "min", "is", "tra", "tion"],
+    "material": ["ma", "te", "ri", "al"],
+    "population": ["pop", "u", "la", "tion"],
+    "security": ["se", "cu", "ri", "ty"],
+    "natural": ["nat", "u", "ral"],
+    "animal": ["an", "i", "mal"],
+    "analysis": ["a", "nal", "y", "sis"],
+    "benefit": ["ben", "e", "fit"],
+    "environmental": ["en", "vi", "ron", "men", "tal"],
+    "environment": ["en", "vi", "ron", "ment"],
+    "especially": ["es", "pe", "cial", "ly"],
+    "development": ["de", "vel", "op", "ment"],
+    "relationship": ["re", "la", "tion", "ship"],
+    "recommend": ["re", "com", "mend"],
+    "activity": ["ac", "tiv", "i", "ty"],
+    "actually": ["ac", "tu", "al", "ly"],
+    "experience": ["ex", "pe", "ri", "ence"],
+    "available": ["a", "vail", "a", "ble"],
+    "particularly": ["par", "tic", "u", "lar", "ly"],
+    "physical": ["phys", "i", "cal"],
+    "strategy": ["strat", "e", "gy"],
+    "various": ["var", "i", "ous"],
+    "traditional": ["tra", "di", "tion", "al"],
+    "popular": ["pop", "u", "lar"],
+    "quality": ["qual", "i", "ty"],
+    "operation": ["op", "er", "a", "tion"],
+    "medical": ["med", "i", "cal"],
+    "economic": ["eco", "nom", "ic"],
+    "military": ["mil", "i", "tar", "y"],
+    "media": ["me", "di", "a"],
 }
 
-RIGHT_JOIN_SUFFIXES = {
-    "al",
-    "cal",
-    "cy",
-    "dence",
-    "ence",
-    "gy",
-    "ial",
-    "lar",
-    "lence",
-    "ly",
-    "ment",
-    "ness",
-    "ous",
-    "ship",
-    "sion",
-    "tion",
-    "ty",
-    "ual",
-}
+IPA_SYLLABLE_RE = re.compile(
+    r"aɪ|aʊ|eɪ|oʊ|ɔɪ|ju|ɪr|er|ɛr|ʊr|ɔr|ɑr|ɚ|ɝ|[iyɪʊueəɛæʌɑɔɒɜɐo]"
+)
 
-LEFT_PULL_ENDINGS = {
-    "ic": 1,
-    "ute": 1,
+COMMON_VOWEL_TEAMS = {
+    "ai",
+    "ay",
+    "ea",
+    "ee",
+    "ei",
+    "eu",
+    "ew",
+    "ie",
+    "oa",
+    "oe",
+    "oi",
+    "oo",
+    "ou",
+    "ow",
+    "oy",
+    "au",
+    "aw",
+    "ui",
+    "ue",
+    "igh",
 }
-
-MAX_CHUNK_COUNT = 3
 
 
 def ensure_ecdict() -> Path:
@@ -418,158 +464,125 @@ def normalize_phonetic(word: str, current: str = "") -> str:
     return current
 
 
-def squash_single_letter_chunks(chunks: list[str]) -> list[str]:
-    merged = [chunk for chunk in chunks if chunk]
-    i = 0
+def estimate_syllable_count(word: str) -> int:
+    phonetic = normalize_phonetic(word, "").strip("/")
+    count = len(IPA_SYLLABLE_RE.findall(phonetic))
+    return max(1, count)
 
-    while i < len(merged):
-        if len(merged[i]) != 1:
-            i += 1
+
+def split_vowel_run(sequence: str, target_groups: int) -> list[str]:
+    if target_groups <= 1 or len(sequence) <= 1:
+        return [sequence]
+
+    if sequence.lower() in COMMON_VOWEL_TEAMS:
+        return [sequence]
+
+    if target_groups == 2:
+        if len(sequence) == 2:
+            return [sequence[0], sequence[1]]
+        return [sequence[:-1], sequence[-1:]]
+
+    parts = []
+    remaining = sequence
+    while len(parts) < target_groups - 1 and remaining:
+        parts.append(remaining[:1])
+        remaining = remaining[1:]
+
+    if remaining:
+        parts.append(remaining)
+
+    return [part for part in parts if part]
+
+
+def split_chunk_once(chunk: str) -> list[str]:
+    lower = chunk.lower()
+    length = len(lower)
+
+    if length <= 3:
+        return [chunk]
+
+    if lower.endswith("le") and length > 3 and lower[-3] not in "aeiouy":
+        return [chunk[:-2], chunk[-2:]]
+
+    spans = []
+    index = 0
+    while index < length:
+        char = lower[index]
+        is_vowel = char in "aeiou" or (char == "y" and index != 0)
+        if not is_vowel:
+            index += 1
             continue
 
-        if len(merged) == 1:
-            return merged
+        end = index + 1
+        while end < length and (lower[end] in "aeiou" or (lower[end] == "y" and end != 0)):
+            end += 1
 
-        if i == 0:
-            merged[1] = merged[0] + merged[1]
-            del merged[0]
-            continue
+        spans.append((index, end))
+        index = end
 
-        if i == len(merged) - 1:
-            merged[i - 1] += merged[i]
-            del merged[i]
-            i -= 1
-            continue
+    if len(spans) <= 1:
+        return [chunk]
 
-        next_chunk = merged[i + 1]
-        is_final_pair = i + 1 == len(merged) - 1
+    first_start, first_end = spans[0]
+    second_start, second_end = spans[1]
+    middle = lower[first_end:second_start]
 
-        if next_chunk in RIGHT_JOIN_SUFFIXES or (len(next_chunk) <= 2 and is_final_pair):
-            merged[i + 1] = merged[i] + merged[i + 1]
-            del merged[i]
-            continue
+    if not middle:
+        sequence = chunk[first_start:second_end]
+        pieces = split_vowel_run(sequence, 2)
+        if len(pieces) == 2:
+            return [chunk[:first_start] + pieces[0], pieces[1] + chunk[second_end:]]
+        return [chunk]
 
-        merged[i - 1] += merged[i]
-        del merged[i]
-        i -= 1
-
-    return merged
+    cut = first_end if len(middle) == 1 else first_end + 1
+    return [chunk[:cut], chunk[cut:]]
 
 
-def rebalance_terminal_chunks(chunks: list[str]) -> list[str]:
-    rebalanced = chunks[:]
+def refine_unsplit_candidate(chunks: list[str], target_count: int) -> list[str]:
+    current = list(chunks)
+    seen = {tuple(current)}
 
-    for ending, take_count in LEFT_PULL_ENDINGS.items():
-        if len(rebalanced) < 2 or rebalanced[-1] != ending:
-            continue
+    while len(current) < target_count:
+        index = max(range(len(current)), key=lambda idx: len(current[idx]))
+        pieces = split_chunk_once(current[index])
+        proposal = tuple(current[:index] + pieces + current[index + 1:])
+        if len(pieces) == 1 or proposal in seen:
+            break
 
-        previous = rebalanced[-2]
-        if len(previous) <= take_count + 1:
-            continue
+        seen.add(proposal)
+        current = list(proposal)
 
-        rebalanced[-2] = previous[:-take_count]
-        rebalanced[-1] = previous[-take_count:] + ending
-
-    return [chunk for chunk in rebalanced if chunk]
-
-
-def needs_terminal_rebalance(chunks: list[str]) -> bool:
-    if len(chunks) < 2:
-        return False
-
-    ending = chunks[-1]
-    take_count = LEFT_PULL_ENDINGS.get(ending)
-    if take_count is None:
-        return False
-
-    return len(chunks[-2]) > take_count + 1
+    return current
 
 
-def normalize_terminal_suffix(word: str, chunks: list[str]) -> list[str]:
-    normalized = [chunk for chunk in chunks if chunk]
+def choose_natural_chunks(word: str) -> list[str]:
+    if word in CHUNK_OVERRIDES:
+        return CHUNK_OVERRIDES[word]
 
-    if (
-        word.endswith("ly")
-        and len(normalized) >= 2
-        and normalized[-1] != "ly"
-        and normalized[-1].endswith("ly")
-        and len(normalized[-1]) > 2
-    ):
-        prefix = normalized[-1][:-2]
-        normalized[-2] += prefix
-        normalized[-1] = "ly"
+    target_count = estimate_syllable_count(word)
+    us_chunks = us_hyphenator.inserted(word).split("-") if "-" in us_hyphenator.inserted(word) else [word]
+    gb_chunks = gb_hyphenator.inserted(word).split("-") if "-" in gb_hyphenator.inserted(word) else [word]
 
-    return normalized
+    candidates = [("us", us_chunks)]
+    if gb_chunks != us_chunks:
+        candidates.append(("gb", gb_chunks))
 
+    _, best_chunks = min(
+        candidates,
+        key=lambda item: (abs(len(item[1]) - target_count), 0 if item[0] == "us" else 1),
+    )
 
-def group_chunks_by_count(chunks: list[str], groups: int) -> list[str]:
-    if len(chunks) <= groups:
-        return chunks[:]
+    if len(best_chunks) == 1 and target_count > 1:
+        refined = refine_unsplit_candidate(best_chunks, target_count)
+        if refined != best_chunks:
+            return refined
 
-    base_size = len(chunks) // groups
-    extra = len(chunks) % groups
-    group_sizes = [base_size + (1 if index < extra else 0) for index in range(groups)]
-
-    grouped = []
-    start = 0
-    for size in group_sizes:
-        grouped.append("".join(chunks[start:start + size]))
-        start += size
-
-    return [chunk for chunk in grouped if chunk]
-
-
-def limit_chunk_count(word: str, chunks: list[str]) -> list[str]:
-    limited = normalize_terminal_suffix(word, chunks)
-    if len(limited) <= MAX_CHUNK_COUNT:
-        return limited
-    return group_chunks_by_count(limited, MAX_CHUNK_COUNT)
-
-
-def build_memory_chunks(word: str) -> list[str]:
-    inserted = hyphenator.inserted(word)
-    if not inserted or inserted == word:
-        return [word]
-
-    chunks = squash_single_letter_chunks(inserted.split("-"))
-    chunks = rebalance_terminal_chunks(chunks)
-    chunks = limit_chunk_count(word, chunks)
-    return chunks or [word]
+    return [chunk for chunk in best_chunks if chunk] or [word]
 
 
 def normalize_chunks(word: str, current_chunks: Optional[list[str]] = None) -> list[str]:
-    if word in CHUNK_OVERRIDES:
-        return limit_chunk_count(word, CHUNK_OVERRIDES[word])
-
-    current_chunks = [chunk for chunk in (current_chunks or []) if chunk]
-
-    if len(word) <= 5:
-        return [word]
-
-    candidate = build_memory_chunks(word)
-
-    if not current_chunks:
-        return candidate
-
-    if len(current_chunks) > MAX_CHUNK_COUNT:
-        return candidate
-
-    if needs_terminal_rebalance(current_chunks):
-        return candidate
-
-    if normalize_terminal_suffix(word, current_chunks) != current_chunks:
-        return candidate
-
-    if len(current_chunks) > 1 and not any(len(chunk) == 1 for chunk in current_chunks):
-        return current_chunks
-
-    if len(current_chunks) == 1 and len(word) <= 7:
-        return [word]
-
-    if len(word) <= 7 and len(candidate) > 3:
-        return [word]
-
-    return candidate
+    _ = current_chunks
+    return choose_natural_chunks(word)
 
 
 def clean_existing(items: list[dict]) -> list[dict]:

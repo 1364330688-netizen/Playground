@@ -154,21 +154,105 @@ function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+function animateBubbleLetters(letters, duration) {
+  const centerIndex = (letters.length - 1) / 2;
+
+  letters.forEach((letter, index) => {
+    if (letter.dataset.space === "true" || typeof letter.animate !== "function") {
+      return;
+    }
+
+    const distanceFromCenter = index - centerIndex;
+    const spreadBias = distanceFromCenter * randomBetween(1.8, 3.6);
+    const wiggle = randomBetween(4.8, 10.8);
+    const liftBias = randomBetween(-4.5, 4.5) - Math.abs(distanceFromCenter) * 0.45;
+    const sideBurst = randomBetween(-wiggle * 1.2, wiggle * 1.2);
+    const sideBurstLate = randomBetween(-wiggle * 1.75, wiggle * 1.75);
+    const sideReturn = randomBetween(-wiggle * 0.7, wiggle * 0.7);
+    const verticalBurst = randomBetween(-wiggle * 1.4, wiggle * 0.35);
+    const verticalBurstLate = randomBetween(-wiggle * 2.4, wiggle * 0.55);
+    const hoverLift = randomBetween(-wiggle * 2.9, -wiggle * 1.3);
+    const startRotate = randomBetween(-3.8, 3.8);
+    const midRotate = startRotate + randomBetween(-5.6, 5.6);
+    const endRotate = midRotate + randomBetween(-6.4, 6.4);
+    const returnRotate = endRotate + randomBetween(-3.5, 3.5);
+    const delay = Math.max(0, randomBetween(0, 180) + Math.abs(distanceFromCenter) * 14);
+    const driftDuration = duration + randomBetween(-220, 420);
+
+    letter.animate(
+      [
+        {
+          opacity: 0,
+          transform: `translate3d(0px, 0px, 0) rotate(${startRotate}deg) scale(0.94)`,
+        },
+        {
+          offset: 0.16,
+          opacity: 1,
+          transform: `translate3d(${Math.round(spreadBias * 0.18 + sideBurst * 0.24)}px, ${Math.round(randomBetween(-wiggle * 0.48, wiggle * 0.2) + liftBias * 0.24)}px, 0) rotate(${Math.round(startRotate * 0.55)}deg) scale(1)`,
+        },
+        {
+          offset: 0.48,
+          opacity: 1,
+          transform: `translate3d(${Math.round(spreadBias * 0.46 + sideBurst * 0.7)}px, ${Math.round(verticalBurst + liftBias)}px, 0) rotate(${midRotate}deg) scale(1.03)`,
+        },
+        {
+          offset: 0.68,
+          opacity: 0.9,
+          transform: `translate3d(${Math.round(spreadBias * 0.82 + sideBurstLate * 0.82)}px, ${Math.round(verticalBurstLate + liftBias * 1.52)}px, 0) rotate(${endRotate}deg) scale(1.02)`,
+        },
+        {
+          offset: 0.84,
+          opacity: 0.82,
+          transform: `translate3d(${Math.round(spreadBias * 0.72 + sideReturn)}px, ${Math.round(hoverLift + liftBias * 1.8)}px, 0) rotate(${returnRotate}deg) scale(1.01)`,
+        },
+        {
+          offset: 0.93,
+          opacity: 0.58,
+          transform: `translate3d(${Math.round(spreadBias * 0.9 + sideBurstLate * 0.46)}px, ${Math.round(hoverLift + randomBetween(-wiggle * 0.7, wiggle * 0.16) + liftBias * 1.95)}px, 0) rotate(${Math.round(returnRotate + randomBetween(-2.4, 2.4))}deg) scale(0.995)`,
+        },
+        {
+          opacity: 0.46,
+          transform: `translate3d(${Math.round(spreadBias * 1.08 + sideBurstLate)}px, ${Math.round(verticalBurstLate + randomBetween(-wiggle * 0.8, wiggle * 0.24) + liftBias * 1.95)}px, 0) rotate(${Math.round(endRotate + randomBetween(-4.5, 4.5))}deg) scale(0.99)`,
+        },
+      ],
+      {
+        duration: driftDuration,
+        delay,
+        easing: "cubic-bezier(0.22, 0.72, 0.2, 1)",
+        fill: "both",
+      }
+    );
+  });
+}
+
 function createMemoryBubble(value, isCorrect) {
   const bubble = document.createElement("div");
   const laneWidth = elements.bubbleLane.clientWidth || elements.wordCard.clientWidth || 600;
   const laneHeight = elements.bubbleLane.clientHeight || elements.wordCard.clientHeight || 420;
   const mainWordSize = parseFloat(window.getComputedStyle(elements.wordText).fontSize) || 96;
-  const widthBasedSize = (laneWidth * 0.72) / Math.max(value.length * 0.56, 1);
-  const fontSize = Math.max(30, Math.min(mainWordSize * 0.55, widthBasedSize, 88));
-  const startTilt = randomBetween(-5, 5);
-  const midTilt = startTilt + randomBetween(-6, 6);
-  const endTilt = midTilt + randomBetween(-7, 7);
-  const duration = randomBetween(2550, 3400);
+  const widthBasedSize = (laneWidth * 0.76) / Math.max(value.length * 0.52, 1);
+  const fontSize = Math.max(36, Math.min(mainWordSize * 0.5, widthBasedSize, 96));
+  const wordShell = document.createElement("div");
+  const letters = [];
+  const startTilt = randomBetween(-1.8, 1.8);
+  const midTilt = startTilt + randomBetween(-2.4, 2.4);
+  const endTilt = midTilt + randomBetween(-2.8, 2.8);
+  const returnTilt = endTilt + randomBetween(-1.8, 1.8);
+  const duration = randomBetween(3480, 4580);
 
   bubble.className = `memory-bubble ${isCorrect ? "memory-bubble-success" : "memory-bubble-error"}`;
-  bubble.textContent = value;
+  wordShell.className = "memory-bubble-word";
   bubble.style.fontSize = `${fontSize}px`;
+  [...value].forEach((character) => {
+    const letter = document.createElement("span");
+    const isSpace = character === " ";
+    letter.className = `memory-bubble-letter${isSpace ? " memory-bubble-letter-space" : ""}`;
+    letter.dataset.space = isSpace ? "true" : "false";
+    letter.textContent = isSpace ? "\u00A0" : character;
+    wordShell.appendChild(letter);
+    letters.push(letter);
+  });
+  bubble.appendChild(wordShell);
   elements.bubbleLane.appendChild(bubble);
 
   const bubbleWidth = bubble.offsetWidth || fontSize * Math.max(value.length * 0.55, 3);
@@ -183,13 +267,14 @@ function createMemoryBubble(value, isCorrect) {
   const maxLeftDrift = -startLeft + 14;
   const maxRightDrift = laneWidth - startLeft - bubbleWidth - 14;
   const curveOneX = randomBetween(
-    Math.max(-150, maxLeftDrift),
-    Math.min(150, maxRightDrift)
+    Math.max(-110, maxLeftDrift),
+    Math.min(110, maxRightDrift)
   );
-  const curveTwoX = curveOneX + randomBetween(-120, 120);
-  const endX = curveTwoX + randomBetween(-120, 120);
-  const finalX = endX + randomBetween(-70, 70);
-  const rise = -randomBetween(laneHeight * 0.52, laneHeight - bubbleHeight - 18);
+  const curveTwoX = curveOneX + randomBetween(-68, 68);
+  const endX = curveTwoX + randomBetween(-52, 52);
+  const returnX = endX + randomBetween(-34, 34);
+  const finalX = endX + randomBetween(-34, 34);
+  const rise = -randomBetween(laneHeight * 0.58, laneHeight - bubbleHeight - 8);
 
   bubble.style.left = `${startLeft}px`;
   bubble.style.bottom = `${startBottom}px`;
@@ -197,38 +282,46 @@ function createMemoryBubble(value, isCorrect) {
   const keyframes = [
     {
       opacity: 0,
-      filter: "blur(1px)",
-      transform: `translate3d(0px, 0px, 0) scale(0.9) rotate(${startTilt}deg)`,
+      filter: "blur(0.7px)",
+      transform: `translate3d(0px, 0px, 0) scale(0.92) rotate(${startTilt}deg)`,
     },
     {
-      offset: 0.14,
+      offset: 0.16,
       opacity: 1,
       filter: "blur(0px)",
-      transform: `translate3d(${Math.round(curveOneX)}px, -24px, 0) scale(1) rotate(${startTilt * 0.4}deg)`,
+      transform: `translate3d(${Math.round(curveOneX)}px, -16px, 0) scale(1.01) rotate(${Math.round(startTilt * 0.35)}deg)`,
     },
     {
-      offset: 0.42,
+      offset: 0.46,
       opacity: 0.98,
       filter: "blur(0px)",
       transform: `translate3d(${Math.round(curveTwoX)}px, ${Math.round(rise * 0.42)}px, 0) scale(1.03) rotate(${midTilt}deg)`,
     },
     {
-      offset: 0.74,
+      offset: 0.72,
+      opacity: 0.72,
+      filter: "blur(0.12px)",
+      transform: `translate3d(${Math.round(endX)}px, ${Math.round(rise * 0.76)}px, 0) scale(1.04) rotate(${endTilt}deg)`,
+    },
+    {
+      offset: 0.88,
       opacity: 0.52,
-      filter: "blur(0.25px)",
-      transform: `translate3d(${Math.round(endX)}px, ${Math.round(rise * 0.76)}px, 0) scale(1.06) rotate(${endTilt}deg)`,
+      filter: "blur(0.2px)",
+      transform: `translate3d(${Math.round(returnX)}px, ${Math.round(rise * 0.88)}px, 0) scale(1.025) rotate(${returnTilt}deg)`,
     },
     {
       opacity: 0,
-      filter: "blur(1.4px)",
-      transform: `translate3d(${Math.round(finalX)}px, ${Math.round(rise)}px, 0) scale(1.09) rotate(${endTilt + randomBetween(-3, 3)}deg)`,
+      filter: "blur(0.95px)",
+      transform: `translate3d(${Math.round(finalX)}px, ${Math.round(rise)}px, 0) scale(1.05) rotate(${Math.round(endTilt + randomBetween(-2, 2))}deg)`,
     },
   ];
+
+  animateBubbleLetters(letters, duration);
 
   if (typeof bubble.animate === "function") {
     const animation = bubble.animate(keyframes, {
       duration,
-      easing: "cubic-bezier(0.22, 0.61, 0.36, 1)",
+      easing: "cubic-bezier(0.18, 0.7, 0.2, 1)",
       fill: "forwards",
     });
 

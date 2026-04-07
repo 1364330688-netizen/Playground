@@ -185,25 +185,48 @@ input {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0 0.08em;
+  padding: 0;
+  font-family: "Nunito", "Avenir Next Rounded", "Arial Rounded MT Bold", sans-serif;
   font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
+  font-weight: 800;
+  line-height: 0.95;
   white-space: nowrap;
-  transform: translate3d(0, 0, 0) scale(0.92);
+  letter-spacing: -0.015em;
+  transform: translate3d(0, 0, 0) scale(0.94);
+  transform-origin: center bottom;
   opacity: 0;
+  filter: saturate(1.03);
   pointer-events: none;
   user-select: none;
+  text-rendering: geometricPrecision;
+}
+
+.memory-bubble-word {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0;
+  white-space: pre;
+}
+
+.memory-bubble-letter {
+  display: inline-block;
+  min-width: 0.22em;
+  transform-origin: 50% 68%;
+  will-change: transform, opacity;
+}
+
+.memory-bubble-letter-space {
+  min-width: 0.3em;
 }
 
 .memory-bubble-success {
-  color: rgba(43, 102, 53, 0.9);
-  text-shadow: 0 10px 22px rgba(84, 159, 101, 0.18);
+  color: rgba(103, 176, 120, 0.82);
+  text-shadow: 0 10px 18px rgba(120, 200, 139, 0.1);
 }
 
 .memory-bubble-error {
-  color: rgba(154, 71, 71, 0.92);
-  text-shadow: 0 10px 22px rgba(198, 118, 118, 0.16);
+  color: rgba(222, 133, 140, 0.78);
+  text-shadow: 0 10px 18px rgba(228, 151, 157, 0.1);
 }
 
 .memory-dock {
