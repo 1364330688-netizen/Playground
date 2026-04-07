@@ -328,33 +328,55 @@ input {
 }
 
 .platform-windows .ambient {
-  filter: blur(7px);
-  opacity: 0.6;
+  display: none;
 }
 
-.platform-windows .word-stage,
+.platform-windows body,
+.platform-windows .word-mark,
+.platform-windows .memory-bubble {
+  text-rendering: auto;
+}
+
 .platform-windows .stage {
   backface-visibility: hidden;
   transform: translateZ(0);
+  contain: layout paint;
 }
 
 .platform-windows .stage {
-  background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.9) 0%, rgba(248, 241, 233, 0.84) 100%);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 251, 246, 0.96);
+  box-shadow: 0 10px 28px rgba(86, 61, 39, 0.08);
+  backdrop-filter: none;
+}
+
+.platform-windows .stage::before {
+  display: none;
 }
 
 .platform-windows .memory-shell,
 .platform-windows .edge-arrow {
   backface-visibility: hidden;
   transform: translateZ(0);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 243, 238, 0.88) 100%);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 22px rgba(86, 61, 39, 0.08);
+  backdrop-filter: none;
 }
 
 .performance-lite .memory-bubble {
   filter: none;
+}
+
+.performance-lite .memory-bubble-success,
+.performance-lite .memory-bubble-error {
+  text-shadow: none;
+}
+
+.performance-lite .memory-bubble-letter {
+  will-change: auto;
+}
+
+.platform-windows .stage.pulse .word-stage {
+  animation: wordPulseLite 240ms ease-out;
 }
 
 .edge-arrow-left {
@@ -373,6 +395,18 @@ input {
   0% {
     transform: translateY(10px);
     opacity: 0.72;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes wordPulseLite {
+  0% {
+    transform: translateY(4px);
+    opacity: 0.9;
   }
 
   100% {

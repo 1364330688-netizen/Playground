@@ -74,6 +74,8 @@ let autoPronounceTimer = null;
 let hasUserActivatedAudio = false;
 let pendingAutoPronunciation = false;
 let lastWordActivationAt = 0;
+let pronunciationAudio = null;
+let lastPronunciationRequestId = 0;
 
 function getCurrentWord() {
   const currentIndex = state.order[state.currentPosition] ?? 0;
@@ -180,6 +182,48 @@ function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+function canUseSpeechSynthesis() {
+  return "speechSynthesis" in window && typeof window.SpeechSynthesisUtterance === "function";
+}
+
+function ensurePronunciationAudio() {
+  if (pronunciationAudio) {
+    return pronunciationAudio;
+  }
+
+  pronunciationAudio = new Audio();
+  pronunciationAudio.preload = "none";
+  pronunciationAudio.playsInline = true;
+  return pronunciationAudio;
+}
+
+function stopRemotePronunciation() {
+  if (!pronunciationAudio) {
+    return;
+  }
+
+  pronunciationAudio.pause();
+  pronunciationAudio.currentTime = 0;
+}
+
+function stopAllPronunciation() {
+  window.clearTimeout(autoPronounceTimer);
+
+  if (canUseSpeechSynthesis()) {
+    window.speechSynthesis.cancel();
+  }
+
+  stopRemotePronunciation();
+}
+
+function buildRemotePronunciationUrls(word) {
+  const query = encodeURIComponent(word);
+  return [
+    `https://dict.youdao.com/dictvoice?audio=${query}&type=2`,
+    `https://dict.youdao.com/dictvoice?audio=${query}&type=1`,
+  ];
+}
+
 function animateBubbleLetters(letters, duration) {
   const centerIndex = (letters.length - 1) / 2;
 
@@ -243,50 +287,6 @@ function animateBubbleLetters(letters, duration) {
       ],
       {
         duration: driftDuration,
-        delay,
-        easing: "cubic-bezier(0.22, 0.72, 0.2, 1)",
-        fill: "both",
-      }
-    );
-  });
-}
-
-function animateBubbleLettersLite(letters, duration) {
-  const centerIndex = (letters.length - 1) / 2;
-
-  letters.forEach((letter, index) => {
-    if (letter.dataset.space === "true" || typeof letter.animate !== "function") {
-      return;
-    }
-
-    const distanceFromCenter = index - centerIndex;
-    const xDrift = distanceFromCenter * randomBetween(4, 8);
-    const rise = randomBetween(-18, -10) - Math.abs(distanceFromCenter) * 1.4;
-    const delay = Math.max(0, Math.abs(distanceFromCenter) * 18 + randomBetween(0, 70));
-
-    letter.animate(
-      [
-        {
-          opacity: 0,
-          transform: "translate3d(0px, 0px, 0) scale(0.96)",
-        },
-        {
-          offset: 0.28,
-          opacity: 1,
-          transform: `translate3d(${Math.round(xDrift * 0.4)}px, ${Math.round(rise * 0.28)}px, 0) scale(1.01)`,
-        },
-        {
-          offset: 0.72,
-          opacity: 0.72,
-          transform: `translate3d(${Math.round(xDrift)}px, ${Math.round(rise)}px, 0) scale(1.01)`,
-        },
-        {
-          opacity: 0,
-          transform: `translate3d(${Math.round(xDrift * 1.16)}px, ${Math.round(rise * 1.18)}px, 0) scale(1)`,
-        },
-      ],
-      {
-        duration: Math.max(1200, duration * 0.62),
         delay,
         easing: "cubic-bezier(0.22, 0.72, 0.2, 1)",
         fill: "both",
@@ -414,9 +414,7 @@ function createMemoryBubble(value, isCorrect) {
         },
       ];
 
-  if (environment.shouldUseLiteEffects) {
-    animateBubbleLettersLite(letters, duration);
-  } else {
+  if (!environment.shouldUseLiteEffects) {
     animateBubbleLetters(letters, duration);
   }
 
@@ -470,21 +468,12 @@ function pickVoice() {
   );
 }
 
-function pronounceCurrentWord(options = {}) {
-  if (!("speechSynthesis" in window)) {
+function speakWithSpeechSynthesis(word) {
+  if (!canUseSpeechSynthesis()) {
     return false;
   }
 
-  const { force = false } = options;
-  const canSpeakNow = force || hasUserActivatedAudio || navigator.userActivation?.hasBeenActive;
-  if (!canSpeakNow) {
-    pendingAutoPronunciation = true;
-    return false;
-  }
-
-  window.clearTimeout(autoPronounceTimer);
-  const currentWord = getCurrentWord();
-  const utterance = new SpeechSynthesisUtterance(currentWord.word);
+  const utterance = new SpeechSynthesisUtterance(word);
   const voice = pickVoice();
 
   utterance.lang = voice?.lang || "en-US";
@@ -495,14 +484,81 @@ function pronounceCurrentWord(options = {}) {
   window.speechSynthesis.cancel();
   window.speechSynthesis.resume();
   window.speechSynthesis.speak(utterance);
-  pendingAutoPronunciation = false;
   return true;
+}
+
+async function playRemotePronunciation(word, requestId) {
+  const audio = ensurePronunciationAudio();
+  const sources = buildRemotePronunciationUrls(word);
+
+  for (const source of sources) {
+    if (requestId !== lastPronunciationRequestId) {
+      return false;
+    }
+
+    try {
+      audio.pause();
+      audio.currentTime = 0;
+      audio.src = source;
+      audio.load();
+
+      const playPromise = audio.play();
+      if (playPromise && typeof playPromise.then === "function") {
+        await playPromise;
+      }
+
+      return true;
+    } catch (error) {
+      audio.pause();
+      audio.removeAttribute("src");
+    }
+  }
+
+  return false;
+}
+
+async function pronounceCurrentWord(options = {}) {
+  const { force = false } = options;
+  const canSpeakNow = force || hasUserActivatedAudio || navigator.userActivation?.hasBeenActive;
+  if (!canSpeakNow) {
+    pendingAutoPronunciation = true;
+    return false;
+  }
+
+  const currentWord = getCurrentWord();
+  const requestId = ++lastPronunciationRequestId;
+
+  stopAllPronunciation();
+
+  let didPlay = false;
+
+  if (environment.isAndroid) {
+    didPlay = await playRemotePronunciation(currentWord.word, requestId);
+    if (!didPlay) {
+      didPlay = speakWithSpeechSynthesis(currentWord.word);
+    }
+  } else {
+    didPlay = speakWithSpeechSynthesis(currentWord.word);
+    if (!didPlay) {
+      didPlay = await playRemotePronunciation(currentWord.word, requestId);
+    }
+  }
+
+  if (!didPlay && !force) {
+    pendingAutoPronunciation = true;
+    return false;
+  }
+
+  pendingAutoPronunciation = false;
+  return didPlay;
 }
 
 function scheduleAutoPronunciation(delay = 120) {
   window.clearTimeout(autoPronounceTimer);
   autoPronounceTimer = window.setTimeout(() => {
-    pronounceCurrentWord();
+    pronounceCurrentWord().catch(() => {
+      pendingAutoPronunciation = true;
+    });
   }, delay);
 }
 
@@ -537,7 +593,7 @@ function activateWordPronunciation(event) {
 
   lastWordActivationAt = now;
   unlockAudioAndReplayPending();
-  pronounceCurrentWord({ force: true });
+  pronounceCurrentWord({ force: true }).catch(() => {});
 }
 
 elements.memoryForm.addEventListener("submit", submitMemory);
@@ -577,11 +633,11 @@ window.addEventListener("keydown", (event) => {
 
   if (event.key === " " || event.key === "Enter") {
     event.preventDefault();
-    pronounceCurrentWord({ force: true });
+    pronounceCurrentWord({ force: true }).catch(() => {});
   }
 });
 
-if (window.speechSynthesis) {
+if (canUseSpeechSynthesis()) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 

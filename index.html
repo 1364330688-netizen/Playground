@@ -3,9 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const userAgent = navigator.userAgent || "";
+        const platform = navigator.userAgentData?.platform || navigator.platform || "";
+        const touchPoints = navigator.maxTouchPoints || 0;
+        const root = document.documentElement;
+        const isWindows = /win/i.test(platform) || /\bwindows\b/i.test(userAgent);
+        const isAndroid = /\bandroid\b/i.test(userAgent);
+        const isIOS =
+          /iPad|iPhone|iPod/.test(userAgent) || (platform === "MacIntel" && touchPoints > 1);
+
+        if (isWindows) {
+          root.classList.add("platform-windows", "performance-lite");
+        }
+
+        if (isAndroid) {
+          root.classList.add("platform-android");
+        }
+
+        if (isIOS) {
+          root.classList.add("platform-ios");
+        }
+      })();
+    </script>
     <title>Word Pulse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://dict.youdao.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Serif+SC:wght@500;700&family=Nunito:wght@700;800&display=swap"
       rel="stylesheet"
